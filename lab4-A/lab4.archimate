@@ -1,0 +1,1157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Lab4-PhaseD-Technology-Migration" id="id-lab4-model" version="5.0.0">
+  <folder name="Strategy" id="id-strategy" type="strategy"/>
+  <folder name="Business" id="folder-business" type="business">
+    <element xsi:type="archimate:BusinessProcess" name="L1 Handle Claim" id="bp_handle"/>
+    <element xsi:type="archimate:BusinessProcess" name="Capture Information" id="bp_capture"/>
+    <element xsi:type="archimate:BusinessProcess" name="Notify Additional Stakeholders" id="bp_notify"/>
+    <element xsi:type="archimate:BusinessProcess" name="Validate" id="bp_validate"/>
+    <element xsi:type="archimate:BusinessProcess" name="Investigate" id="bp_investigate"/>
+    <element xsi:type="archimate:BusinessProcess" name="Pay" id="bp_pay"/>
+    <element xsi:type="archimate:BusinessProcess" name="L1 Calculate Insurance Premium" id="bp_calc_prem"/>
+    <element xsi:type="archimate:BusinessFunction" name="Underwriting" id="bf_underwriting"/>
+    <element xsi:type="archimate:BusinessObject" name="Customer Record" id="bo_cust_rec"/>
+    <element xsi:type="archimate:BusinessObject" name="Insurance File" id="bo_ins_file"/>
+    <element xsi:type="archimate:BusinessObject" name="Insurance Request" id="bo_ins_req"/>
+    <element xsi:type="archimate:BusinessObject" name="Insurance Policy" id="bo_ins_pol"/>
+    <element xsi:type="archimate:BusinessObject" name="Claim" id="bo_claim"/>
+    <element xsi:type="archimate:BusinessObject" name="Travel Insurance Policy" id="bo_travel"/>
+    <element xsi:type="archimate:BusinessObject" name="Homeowner's Insurance Policy" id="bo_home"/>
+    <element xsi:type="archimate:BusinessObject" name="Auto Insurance Policy" id="bo_auto"/>
+    <element xsi:type="archimate:BusinessObject" name="Legal Expense Insurance Policy" id="bo_legal"/>
+	<element xsi:type="archimate:TechnologyFunction" id="tf_data_acquisition" name="Data Acquisition"/>
+  </folder>
+  <folder name="Application" id="folder-application" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="Web Portal" id="app_web_portal"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Call Center Application" id="app_call_center"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Legal Expense CRM System" id="app_legal_crm"/>
+    <element xsi:type="archimate:ApplicationComponent" name="General CRM System" id="app_gen_crm"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Home &amp; Away Financial Application" id="app_ha_fin"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Home &amp; Away Policy Administration" id="app_ha_pol"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Auto Insurance Application" id="app_auto_ins"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Legal Expense Back Office System" id="app_legal_bo"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Document Management System" id="app_dms"/>
+    <element xsi:type="archimate:ApplicationComponent" name="ArchiSurance Back Office Suite" id="app_bo_suite"/>
+    <element xsi:type="archimate:ApplicationComponent" name="AUTO-U" id="app_autou"/>
+    <element xsi:type="archimate:ApplicationComponent" name="P-ADMIN" id="app_padmin"/>
+    <element xsi:type="archimate:ApplicationComponent" name="VERSA-CLAIM" id="app_versaclaim"/>
+    <element xsi:type="archimate:ApplicationComponent" name="P-CONFIG" id="app_pconfig"/>
+    <element xsi:type="archimate:ApplicationComponent" name="BRIMS" id="app_brims"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Data Warehousing Solution" id="app_dwh"/>
+    <element xsi:type="archimate:ApplicationService" name="Scanning" id="as_scanning"/>
+    <element xsi:type="archimate:ApplicationService" name="Customer Administration" id="as_cust_admin"/>
+    <element xsi:type="archimate:ApplicationService" name="Claims Administration" id="as_claims_admin"/>
+    <element xsi:type="archimate:ApplicationService" name="Printing" id="as_printing"/>
+    <element xsi:type="archimate:ApplicationService" name="Payment" id="as_payment"/>
+    <element xsi:type="archimate:ApplicationService" name="Customer Data Access" id="as_cust_data_acc"/>
+    <element xsi:type="archimate:ApplicationService" name="Policy Data Management" id="as_pol_data_mgt"/>
+    <element xsi:type="archimate:ApplicationProcess" name="L1 Process Data" id="ap_process_data"/>
+    <element xsi:type="archimate:ApplicationProcess" name="L2 Aggregate Data" id="ap_agg_data"/>
+    <element xsi:type="archimate:ApplicationProcess" name="L2 Analyze Data" id="ap_anal_data"/>
+    <element xsi:type="archimate:ApplicationProcess" name="L2 Report Data" id="ap_rep_data"/>
+    <element xsi:type="archimate:DataObject" name="Customer Data" id="do_cust_data"/>
+    <element xsi:type="archimate:DataObject" name="Call Report" id="do_call_report"/>
+    <element xsi:type="archimate:DataObject" name="Document Data" id="do_doc_data"/>
+    <element xsi:type="archimate:DataObject" name="CRM data" id="do_crm_data"/>
+    <element xsi:type="archimate:DataObject" name="Customer Profile Data" id="do_cust_profile"/>
+    <element xsi:type="archimate:DataObject" name="Policy Data" id="do_policy_data"/>
+    <element xsi:type="archimate:DataObject" name="Claim Data" id="do_claim_data"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="id-tech" type="technology">
+    <element xsi:type="archimate:TechnologyFunction" name="Data Acquisition" id="id-ed299afb889e46509e01231cf510d234"/>
+    <element xsi:type="archimate:Artifact" name="Real-Time Customer Data" id="id-93aca4de44fd457eb96400285dcd6274"/>
+    <element xsi:type="archimate:Device" name="FO Web Hosting Server" id="dev_fo_web_hosting"/>
+    <element xsi:type="archimate:Device" name="FO General-Purpose Server" id="dev_fo_general_purpose"/>
+    <element xsi:type="archimate:Device" name="ArchiSurance General-Purpose Server Cluster" id="dev_ha_cluster"/>
+    <element xsi:type="archimate:Device" name="Auto General-Purpose Server" id="dev_auto_gp"/>
+    <element xsi:type="archimate:Device" name="Document Management Server" id="dev_doc_mgmt"/>
+    <element xsi:type="archimate:Device" name="Legal Expense General-Purpose Server" id="dev_legal_gp"/>
+    <element xsi:type="archimate:Device" name="Data Acquisition Gateway" id="dev_data_acq_gateway"/>
+    <element xsi:type="archimate:Device" name="ArchiSurance Back-Up Server Cluster" id="dev_ha_backup_cluster"/>
+    <element xsi:type="archimate:Device" name="Document Management Back-Up Server" id="dev_doc_backup"/>
+    <element xsi:type="archimate:Network" name="Home &amp; Away LAN" id="net_ha_lan"/>
+    <element xsi:type="archimate:Network" name="PRO-FIT LAN" id="net_profit_lan"/>
+    <element xsi:type="archimate:Network" name="LegallyYours LAN" id="net_legal_lan"/>
+    <element xsi:type="archimate:Network" name="ArchiSurance WAN" id="net_wan"/>
+    <element xsi:type="archimate:Equipment" name="IoT Device" id="eq_iot_device_general"/>
+    <element xsi:type="archimate:Equipment" name="Car Black Box" id="eq_car_black_box"/>
+    <element xsi:type="archimate:Equipment" name="Fitness Tracker" id="eq_fitness_tracker"/>
+    <element xsi:type="archimate:Equipment" name="Home Alarm System" id="eq_home_alarm"/>
+    <element xsi:type="archimate:Equipment" name="Smart Thermostat" id="eq_smart_thermostat"/>
+    <element xsi:type="archimate:Facility" name="Smart Home" id="fac_smart_home"/>
+    <element xsi:type="archimate:Node" name="IoT Device" id="node_iot_device"/>
+    <element xsi:type="archimate:SystemSoftware" name="Container" id="ss_container"/>
+    <element xsi:type="archimate:SystemSoftware" name="PaaS Services" id="ss_paas_services"/>
+    <element xsi:type="archimate:TechnologyService" name="Device Registration Service" id="ts_dev_reg"/>
+    <element xsi:type="archimate:TechnologyService" name="Device Operation Service" id="ts_dev_op"/>
+    <element xsi:type="archimate:TechnologyService" name="Notification Service" id="ts_notification"/>
+    <element xsi:type="archimate:TechnologyInterface" name="REST API" id="ti_rest_api"/>
+    <element xsi:type="archimate:Artifact" name="Web Portal Implementation" id="art_web_portal_impl"/>
+    <element xsi:type="archimate:Artifact" name="Call Center Implementation" id="art_call_center_impl"/>
+    <element xsi:type="archimate:Artifact" name="CRM System Implementation" id="art_crm_sys_impl"/>
+    <element xsi:type="archimate:Artifact" name="Legal Expense CRM System" id="art_legal_crm_impl"/>
+    <element xsi:type="archimate:Artifact" name="Home &amp; Away Financial Application Implementation" id="art_ha_fin_impl"/>
+    <element xsi:type="archimate:Artifact" name="Home &amp; Away Policy Administration Implementation" id="art_ha_pol_impl"/>
+    <element xsi:type="archimate:Artifact" name="Auto Insurance Implementation" id="art_auto_ins_impl"/>
+    <element xsi:type="archimate:Artifact" name="Legal Expense Back Office Implementation" id="art_legal_bo_impl"/>
+    <element xsi:type="archimate:Artifact" name="DMS Implementation" id="art_dms_impl"/>
+    <element xsi:type="archimate:Artifact" name="Back Office Suite Implementation" id="art_bo_suite_impl"/>
+    <element xsi:type="archimate:DistributionNetwork" name="Energy Network" id="net_energy"/>
+  </folder>
+  <folder name="Motivation" id="id-mot" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="id-impl" type="implementation_migration">
+    <element xsi:type="archimate:Plateau" name="Baseline" id="pl_baseline"/>
+    <element xsi:type="archimate:Plateau" name="Transition A" id="pl_transition_a"/>
+    <element xsi:type="archimate:Plateau" name="Transition B" id="pl_transition_b"/>
+    <element xsi:type="archimate:Plateau" name="Transition C" id="pl_transition_c"/>
+    <element xsi:type="archimate:Plateau" name="Target" id="pl_target"/>
+    <element xsi:type="archimate:WorkPackage" name="Project: CRM System Integration" id="wp_crm_integration"/>
+    <element xsi:type="archimate:WorkPackage" name="Project: Back Office System Integration" id="wp_back_office_integration"/>
+    <element xsi:type="archimate:WorkPackage" name="Project: Data Warehousing and BI" id="wp_data_warehousing_bi"/>
+    <element xsi:type="archimate:WorkPackage" name="Work Package: Software Modification" id="wp_software_modification"/>
+    <element xsi:type="archimate:WorkPackage" name="Work Package: Hardware Upgrade" id="wp_hardware_upgrade"/>
+    <element xsi:type="archimate:WorkPackage" name="Work Package: Phasing Out Legacy" id="wp_phasing_out_legacy"/>
+  </folder>
+  <folder name="Other" id="folder-other" type="other">
+    <element xsi:type="archimate:Grouping" name="Front Office" id="grp_front"/>
+    <element xsi:type="archimate:Grouping" name="Back Office" id="grp_back"/>
+    <element xsi:type="archimate:Grouping" name="Shared Service Center" id="grp_ssc"/>
+    <element xsi:type="archimate:Grouping" name="Home &amp; Away Headquarters" id="grp_ha_hq"/>
+    <element xsi:type="archimate:Grouping" name="PRO-FIT Headquarters" id="grp_profit_hq"/>
+    <element xsi:type="archimate:Grouping" name="LegallyYours Headquarters" id="grp_legal_hq"/>
+    <element xsi:type="archimate:Grouping" name="Auto Back Office" id="grp_profit_auto"/>
+    <element xsi:type="archimate:Grouping" name="Legal Expense Back Office" id="grp_legal_back"/>
+    <element xsi:type="archimate:Grouping" name="Communication" id="grp_communication"/>
+    <element xsi:type="archimate:Grouping" name="Baseline" id="grp_baseline"/>
+    <element xsi:type="archimate:Grouping" name="Baseline + Target" id="grp_baseline_target"/>
+    <element xsi:type="archimate:Grouping" name="Target" id="grp_target"/>
+    <element xsi:type="archimate:Grouping" name="Smart Home" id="grp_smart_home"/>
+  </folder>
+  <folder name="Relations" id="folder-relations" type="relations">
+    <element xsi:type="archimate:CompositionRelationship" id="comp_grp_f_web" source="grp_front" target="app_web_portal"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_grp_f_cc" source="grp_front" target="app_call_center"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_grp_f_lcrm" source="grp_front" target="app_legal_crm"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_grp_f_crm" source="grp_front" target="app_gen_crm"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_grp_b_haf" source="grp_back" target="app_ha_fin"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_grp_b_hap" source="grp_back" target="app_ha_pol"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_grp_b_auto" source="grp_back" target="app_auto_ins"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_grp_b_lbo" source="grp_back" target="app_legal_bo"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_grp_b_suite" source="grp_back" target="app_bo_suite"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_grp_b_dwh" source="grp_back" target="app_dwh"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_grp_s_dms" source="grp_ssc" target="app_dms"/>
+    <element xsi:type="archimate:FlowRelationship" name="CRM data" id="flow_crm_gen_web" source="app_gen_crm" target="app_web_portal"/>
+    <element xsi:type="archimate:FlowRelationship" name="CRM data" id="flow_crm_legal_web" source="app_legal_crm" target="app_web_portal"/>
+    <element xsi:type="archimate:FlowRelationship" name="call report" id="flow_call_cc_gen" source="app_call_center" target="app_gen_crm"/>
+    <element xsi:type="archimate:FlowRelationship" name="call report" id="flow_call_gen_cc" source="app_gen_crm" target="app_call_center"/>
+    <element xsi:type="archimate:FlowRelationship" name="call report" id="flow_call_cc_legal" source="app_call_center" target="app_legal_crm"/>
+    <element xsi:type="archimate:FlowRelationship" name="call report" id="flow_call_legal_cc" source="app_legal_crm" target="app_call_center"/>
+    <element xsi:type="archimate:FlowRelationship" name="call report" id="flow_call_cc_web" source="app_call_center" target="app_web_portal"/>
+    <element xsi:type="archimate:FlowRelationship" name="customer data" id="flow_cust_legal" source="app_legal_bo" target="app_legal_crm"/>
+    <element xsi:type="archimate:FlowRelationship" name="customer data" id="flow_cust_auto_gen" source="app_auto_ins" target="app_gen_crm"/>
+    <element xsi:type="archimate:FlowRelationship" name="customer data" id="flow_cust_ha_gen" source="app_ha_pol" target="app_gen_crm"/>
+    <element xsi:type="archimate:FlowRelationship" id="flow_ha_bo" source="app_ha_pol" target="app_ha_fin"/>
+    <element xsi:type="archimate:FlowRelationship" id="flow_ha_ob" source="app_ha_fin" target="app_ha_pol"/>
+    <element xsi:type="archimate:FlowRelationship" name="document data" id="flow_doc_hafin" source="app_ha_fin" target="app_dms"/>
+    <element xsi:type="archimate:FlowRelationship" name="document data" id="flow_doc_hapol" source="app_ha_pol" target="app_dms"/>
+    <element xsi:type="archimate:FlowRelationship" name="document data" id="flow_doc_auto" source="app_auto_ins" target="app_dms"/>
+    <element xsi:type="archimate:FlowRelationship" name="document data" id="flow_doc_legal" source="app_legal_bo" target="app_dms"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_bo_suite1" source="app_bo_suite" target="app_autou"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_bo_suite2" source="app_bo_suite" target="app_padmin"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_bo_suite3" source="app_bo_suite" target="app_versaclaim"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_bo_suite4" source="app_bo_suite" target="app_pconfig"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_bo_suite5" source="app_bo_suite" target="app_brims"/>
+    <element xsi:type="archimate:FlowRelationship" name="customer data" id="flow_cust_bo_gen" source="app_bo_suite" target="app_gen_crm"/>
+    <element xsi:type="archimate:FlowRelationship" name="document data" id="flow_doc_bo_dms" source="app_bo_suite" target="app_dms"/>
+    <element xsi:type="archimate:FlowRelationship" name="document data" id="flow_doc_dms_bo" source="app_dms" target="app_bo_suite"/>
+    <element xsi:type="archimate:FlowRelationship" id="flow_dwh_bo" source="app_bo_suite" target="app_dwh"/>
+    <element xsi:type="archimate:FlowRelationship" id="flow_bo_dwh" source="app_dwh" target="app_bo_suite"/>
+    <element xsi:type="archimate:FlowRelationship" id="flow_auto_padm" source="app_autou" target="app_padmin"/>
+    <element xsi:type="archimate:FlowRelationship" id="flow_padm_auto" source="app_padmin" target="app_autou"/>
+    <element xsi:type="archimate:FlowRelationship" id="flow_padm_versa" source="app_padmin" target="app_versaclaim"/>
+    <element xsi:type="archimate:ServingRelationship" id="serv_pconf_auto" source="app_pconfig" target="app_autou"/>
+    <element xsi:type="archimate:ServingRelationship" id="serv_pconf_padm" source="app_pconfig" target="app_padmin"/>
+    <element xsi:type="archimate:ServingRelationship" id="serv_pconf_versa" source="app_pconfig" target="app_versaclaim"/>
+    <element xsi:type="archimate:ServingRelationship" id="serv_brims_auto" source="app_brims" target="app_autou"/>
+    <element xsi:type="archimate:ServingRelationship" id="serv_brims_padm" source="app_brims" target="app_padmin"/>
+    <element xsi:type="archimate:ServingRelationship" id="serv_brims_versa" source="app_brims" target="app_versaclaim"/>
+    <element xsi:type="archimate:ServingRelationship" id="serv_brims_pconf" source="app_brims" target="app_pconfig"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_bp_handle1" source="bp_handle" target="bp_capture"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_bp_handle2" source="bp_handle" target="bp_notify"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_bp_handle3" source="bp_handle" target="bp_validate"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_bp_handle4" source="bp_handle" target="bp_investigate"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_bp_handle5" source="bp_handle" target="bp_pay"/>
+    <element xsi:type="archimate:FlowRelationship" id="flow_proc_cap_not" source="bp_capture" target="bp_notify"/>
+    <element xsi:type="archimate:FlowRelationship" id="flow_proc_not_val" source="bp_notify" target="bp_validate"/>
+    <element xsi:type="archimate:FlowRelationship" id="flow_proc_val_inv" source="bp_validate" target="bp_investigate"/>
+    <element xsi:type="archimate:FlowRelationship" id="flow_proc_inv_pay" source="bp_investigate" target="bp_pay"/>
+    <element xsi:type="archimate:RealizationRelationship" id="real_scan_dms" source="app_dms" target="as_scanning"/>
+    <element xsi:type="archimate:RealizationRelationship" id="real_print_dms" source="app_dms" target="as_printing"/>
+    <element xsi:type="archimate:RealizationRelationship" id="real_cust_crm" source="app_gen_crm" target="as_cust_admin"/>
+    <element xsi:type="archimate:RealizationRelationship" id="real_claims_ha" source="app_ha_pol" target="as_claims_admin"/>
+    <element xsi:type="archimate:RealizationRelationship" id="real_pay_ha" source="app_ha_fin" target="as_payment"/>
+    <element xsi:type="archimate:ServingRelationship" id="serv_scan_cap" source="as_scanning" target="bp_capture"/>
+    <element xsi:type="archimate:ServingRelationship" id="serv_cust_cap" source="as_cust_admin" target="bp_capture"/>
+    <element xsi:type="archimate:ServingRelationship" id="serv_cust_not" source="as_cust_admin" target="bp_notify"/>
+    <element xsi:type="archimate:ServingRelationship" id="serv_claims_val" source="as_claims_admin" target="bp_validate"/>
+    <element xsi:type="archimate:ServingRelationship" id="serv_claims_inv" source="as_claims_admin" target="bp_investigate"/>
+    <element xsi:type="archimate:ServingRelationship" id="serv_print_inv" source="as_printing" target="bp_investigate"/>
+    <element xsi:type="archimate:ServingRelationship" id="serv_pay_pay" source="as_payment" target="bp_pay"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_dwh_proc" source="app_dwh" target="ap_process_data"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_proc_agg" source="ap_process_data" target="ap_agg_data"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_proc_ana" source="ap_process_data" target="ap_anal_data"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_proc_rep" source="ap_process_data" target="ap_rep_data"/>
+    <element xsi:type="archimate:FlowRelationship" id="flow_acq_agg" source="id-ed299afb889e46509e01231cf510d234" target="ap_agg_data"/>
+    <element xsi:type="archimate:AssociationRelationship" id="assoc_real_flow" source="id-93aca4de44fd457eb96400285dcd6274" target="flow_acq_agg"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="trig_agg_ana" source="ap_agg_data" target="ap_anal_data"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="trig_ana_rep" source="ap_anal_data" target="ap_rep_data"/>
+    <element xsi:type="archimate:AssociationRelationship" id="assoc_prof_flow" source="do_cust_profile" target="flow_rep_calc"/>
+    <element xsi:type="archimate:FlowRelationship" id="flow_rep_calc" source="ap_rep_data" target="bp_calc_prem"/>
+    <element xsi:type="archimate:FlowRelationship" id="flow_calc_und" source="bp_calc_prem" target="bf_underwriting"/>
+    <element xsi:type="archimate:AggregationRelationship" id="agg_cust_ins" source="bo_cust_rec" target="bo_ins_file"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_ins_req" source="bo_ins_file" target="bo_ins_req"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_ins_pol" source="bo_ins_file" target="bo_ins_pol"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_ins_claim" source="bo_ins_file" target="bo_claim"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="spec_travel" source="bo_travel" target="bo_ins_pol"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="spec_home" source="bo_home" target="bo_ins_pol"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="spec_auto" source="bo_auto" target="bo_ins_pol"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="spec_legal" source="bo_legal" target="bo_ins_pol"/>
+    <element xsi:type="archimate:RealizationRelationship" id="real_do_cust" source="do_cust_data" target="bo_cust_rec"/>
+    <element xsi:type="archimate:RealizationRelationship" id="real_do_claim" source="do_claim_data" target="bo_claim"/>
+    <element xsi:type="archimate:RealizationRelationship" id="real_do_policy" source="do_policy_data" target="bo_ins_pol"/>
+    <element xsi:type="archimate:RealizationRelationship" id="real_srv_do_cust" source="as_cust_data_acc" target="do_cust_data"/>
+    <element xsi:type="archimate:RealizationRelationship" id="real_srv_do_pol" source="as_pol_data_mgt" target="do_policy_data"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_hapol_srv1" source="app_ha_pol" target="as_cust_data_acc"/>
+    <element xsi:type="archimate:CompositionRelationship" id="comp_hapol_srv2" source="app_ha_pol" target="as_pol_data_mgt"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-95b469c286da4e0e9d2536e830e3de0c" source="bo_ins_req" target="bo_ins_pol"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-44032d9561d54761a3d13c7c56f1e6e9" source="bo_claim" target="bo_ins_pol"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_ha_front" source="grp_ha_hq" target="grp_front"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_ha_back" source="grp_ha_hq" target="grp_back"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_profit_auto" source="grp_profit_hq" target="grp_profit_auto"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_profit_ssc" source="grp_profit_hq" target="grp_ssc"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_legal_back" source="grp_legal_hq" target="grp_legal_back"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_front_webdev" source="grp_front" target="dev_fo_web_hosting"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_front_webart" source="grp_front" target="art_web_portal_impl"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_front_gpdev" source="grp_front" target="dev_fo_general_purpose"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_front_callart" source="grp_front" target="art_call_center_impl"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_front_crmart" source="grp_front" target="art_crm_sys_impl"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_front_lcrmart" source="grp_front" target="art_legal_crm_impl"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_back_cluster" source="grp_back" target="dev_ha_cluster"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_back_hafinart" source="grp_back" target="art_ha_fin_impl"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_back_hapolart" source="grp_back" target="art_ha_pol_impl"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_auto_dev" source="grp_profit_auto" target="dev_auto_gp"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_auto_art" source="grp_profit_auto" target="art_auto_ins_impl"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_ssc_docdev" source="grp_ssc" target="dev_doc_mgmt"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_ssc_dmsart" source="grp_ssc" target="art_dms_impl"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_ssc_backupdev" source="grp_ssc" target="dev_ha_backup_cluster"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_ssc_bosuiteart" source="grp_ssc" target="art_bo_suite_impl"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_legal_dev" source="grp_legal_back" target="dev_legal_gp"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_legal_art" source="grp_legal_back" target="art_legal_bo_impl"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_front_gateway" source="grp_front" target="dev_data_acq_gateway"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_back_backupcluster" source="grp_back" target="dev_ha_backup_cluster"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_back_docbackup" source="grp_back" target="dev_doc_backup"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_grp_ssc_dmsart2" source="grp_ssc" target="art_dms_impl"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel_art_web_to_websrv" source="art_web_portal_impl" target="dev_fo_web_hosting"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel_art_call_to_fo_gp" source="art_call_center_impl" target="dev_fo_general_purpose"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel_art_crm_to_fo_gp" source="art_crm_sys_impl" target="dev_fo_general_purpose"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel_art_lcrm_to_fo_gp" source="art_legal_crm_impl" target="dev_fo_general_purpose"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel_art_hafin_to_cluster" source="art_ha_fin_impl" target="dev_ha_cluster"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel_art_hapol_to_cluster" source="art_ha_pol_impl" target="dev_ha_cluster"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel_art_auto_to_auto_gp" source="art_auto_ins_impl" target="dev_auto_gp"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel_art_lbo_to_legal_gp" source="art_legal_bo_impl" target="dev_legal_gp"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel_art_dms_to_docsrv" source="art_dms_impl" target="dev_doc_mgmt"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel_art_bosuite_to_cluster" source="art_bo_suite_impl" target="dev_ha_cluster"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel_art_bosuite_to_backupcluster" source="art_bo_suite_impl" target="dev_ha_backup_cluster"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel_art_dms_to_docbackup" source="art_dms_impl" target="dev_doc_backup"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel_art_dms_to_docsrv2" source="art_dms_impl" target="dev_doc_mgmt"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_websrv_to_ha_lan" source="dev_fo_web_hosting" target="net_ha_lan"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_fo_gp_to_ha_lan" source="dev_fo_general_purpose" target="net_ha_lan"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_cluster_to_ha_lan" source="dev_ha_cluster" target="net_ha_lan"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_gateway_to_ha_lan" source="dev_data_acq_gateway" target="net_ha_lan"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_auto_to_profit_lan" source="dev_auto_gp" target="net_profit_lan"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_doc_to_profit_lan" source="dev_doc_mgmt" target="net_profit_lan"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_backupcluster_to_profit_lan" source="dev_ha_backup_cluster" target="net_profit_lan"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_legal_to_legal_lan" source="dev_legal_gp" target="net_legal_lan"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_ha_lan_to_wan" source="net_ha_lan" target="net_wan"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_profit_lan_to_wan" source="net_profit_lan" target="net_wan"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_legal_lan_to_wan" source="net_legal_lan" target="net_wan"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="rel_car_spec_iot" source="eq_car_black_box" target="eq_iot_device_general"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="rel_fit_spec_iot" source="eq_fitness_tracker" target="eq_iot_device_general"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="rel_alarm_spec_iot" source="eq_home_alarm" target="eq_iot_device_general"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="rel_therm_spec_iot" source="eq_smart_thermostat" target="eq_iot_device_general"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_alarm_in_home" source="eq_home_alarm" target="fac_smart_home"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_therm_in_home" source="eq_smart_thermostat" target="fac_smart_home"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_therm_to_energy" source="eq_smart_thermostat" target="net_energy"/>
+    <element xsi:type="archimate:FlowRelationship" name="Car data" id="rel_car_to_gateway" source="eq_car_black_box" target="dev_data_acq_gateway"/>
+    <element xsi:type="archimate:FlowRelationship" name="Fitness data" id="rel_fit_to_gateway" source="eq_fitness_tracker" target="dev_data_acq_gateway"/>
+    <element xsi:type="archimate:FlowRelationship" name="Alarm data" id="rel_alarm_to_gateway" source="eq_home_alarm" target="dev_data_acq_gateway"/>
+    <element xsi:type="archimate:FlowRelationship" name="Thermostat data" id="rel_therm_to_gateway" source="eq_smart_thermostat" target="dev_data_acq_gateway"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_node_to_api" source="node_iot_device" target="ti_rest_api"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel_container_to_gateway" source="ss_container" target="dev_data_acq_gateway"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel_paas_to_gateway" source="ss_paas_services" target="dev_data_acq_gateway"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel_f_to_reg" source="tf_data_acquisition" target="ts_dev_reg"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel_f_to_op" source="tf_data_acquisition" target="ts_dev_op"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel_f_to_notif" source="tf_data_acquisition" target="ts_notification"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel_reg_to_api" source="ts_dev_reg" target="ti_rest_api"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel_op_to_api" source="ts_dev_op" target="ti_rest_api"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel_notif_to_api" source="ts_notification" target="ti_rest_api"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel_pl_baseline_a" source="pl_baseline" target="pl_transition_a"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel_pl_baseline_b" source="pl_baseline" target="pl_transition_b"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel_pl_a_c" source="pl_transition_a" target="pl_transition_c"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel_pl_b_c" source="pl_transition_b" target="pl_transition_c"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel_pl_c_target" source="pl_transition_c" target="pl_target"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_wp_bo_sw" source="wp_back_office_integration" target="wp_software_modification"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_wp_bo_hw" source="wp_back_office_integration" target="wp_hardware_upgrade"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_wp_bo_legacy" source="wp_back_office_integration" target="wp_phasing_out_legacy"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_proj_crm_legalcrm" source="wp_crm_integration" target="app_legal_crm"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_proj_crm_gencrm" source="wp_crm_integration" target="app_gen_crm"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_proj_crm_fogp" source="wp_crm_integration" target="dev_fo_general_purpose"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_proj_bo_hafin" source="wp_back_office_integration" target="app_ha_fin"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_proj_bo_auto" source="wp_back_office_integration" target="app_auto_ins"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_proj_bo_legalbo" source="wp_back_office_integration" target="app_legal_bo"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_proj_bo_bosuite" source="wp_back_office_integration" target="app_bo_suite"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_proj_bo_cluster" source="wp_back_office_integration" target="dev_ha_cluster"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_proj_bo_autogp" source="wp_back_office_integration" target="dev_auto_gp"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_proj_bo_legalgp" source="wp_back_office_integration" target="dev_legal_gp"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_proj_bo_backupcluster" source="wp_back_office_integration" target="dev_ha_backup_cluster"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_proj_dwh_app" source="wp_data_warehousing_bi" target="app_dwh"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_proj_dwh_gateway" source="wp_data_warehousing_bi" target="dev_data_acq_gateway"/>
+	<relationship xsi:type="archimate:AssociationRelationship" id="rel_docbackup_to_ha_lan" source="dev_doc_backup_server" target="net_home_away_lan"/>
+  </folder>
+  <folder name="Views" id="folder-views" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="01. Application Cooperation (Baseline)" id="view_01">
+      <child xsi:type="archimate:DiagramObject" id="v1_grp_front" archimateElement="grp_front">
+        <bounds x="20" y="20" width="700" height="200"/>
+        <child xsi:type="archimate:DiagramObject" id="v1_app_web" targetConnections="conn_v1_13 conn_v1_cc_web conn_v1_2" archimateElement="app_web_portal">
+          <bounds x="40" y="40" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v1_app_lcrm" targetConnections="conn_v1_11 conn_v1_15" archimateElement="app_legal_crm">
+          <bounds x="440" y="40" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_14" source="v1_app_lcrm" target="v1_app_cc" archimateRelationship="flow_call_legal_cc">
+            <bendpoint startX="-16" startY="70" endX="384" endY="-10"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_13" source="v1_app_lcrm" target="v1_app_web" archimateRelationship="flow_crm_legal_web"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v1_app_cc" targetConnections="conn_v1_14 conn_v1_3" archimateElement="app_call_center">
+          <bounds x="40" y="120" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_cc_web" source="v1_app_cc" target="v1_app_web" archimateRelationship="flow_call_cc_web"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_15" source="v1_app_cc" target="v1_app_lcrm" archimateRelationship="flow_call_cc_legal">
+            <bendpoint startX="300" startY="-46" endX="-100" endY="34"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_1" source="v1_app_cc" target="v1_app_crm" archimateRelationship="flow_call_cc_gen">
+            <bendpoint startX="120" startY="14" endX="-120" endY="14"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v1_app_crm" targetConnections="conn_v1_7 conn_v1_9 conn_v1_1" archimateElement="app_gen_crm">
+          <bounds x="276" y="144" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_3" source="v1_app_crm" target="v1_app_cc" archimateRelationship="flow_call_gen_cc"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_2" source="v1_app_crm" target="v1_app_web" archimateRelationship="flow_crm_gen_web">
+            <bendpoint startX="-116" startY="-82" endX="120" endY="22"/>
+          </sourceConnection>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v1_grp_back" archimateElement="grp_back">
+        <bounds x="20" y="261" width="700" height="140"/>
+        <child xsi:type="archimate:DiagramObject" id="v1_app_hafin" targetConnections="conn_v1_6" archimateElement="app_ha_fin">
+          <bounds x="20" y="50" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_5" source="v1_app_hafin" target="v1_app_dms" archimateRelationship="flow_doc_hafin"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_4" source="v1_app_hafin" target="v1_app_hapol" archimateRelationship="flow_ha_ob"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v1_app_hapol" targetConnections="conn_v1_4" archimateElement="app_ha_pol">
+          <bounds x="180" y="50" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_8" source="v1_app_hapol" target="v1_app_dms" archimateRelationship="flow_doc_hapol"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_7" source="v1_app_hapol" target="v1_app_crm" archimateRelationship="flow_cust_ha_gen"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_6" source="v1_app_hapol" target="v1_app_hafin" archimateRelationship="flow_ha_bo">
+            <bendpoint startX="-80" startY="19" endX="80" endY="19"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v1_app_auto" archimateElement="app_auto_ins">
+          <bounds x="360" y="50" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_9" source="v1_app_auto" target="v1_app_crm" archimateRelationship="flow_cust_auto_gen"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_10" source="v1_app_auto" target="v1_app_dms" archimateRelationship="flow_doc_auto"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v1_app_lbo" archimateElement="app_legal_bo">
+          <bounds x="540" y="50" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_12" source="v1_app_lbo" target="v1_app_dms" archimateRelationship="flow_doc_legal"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v1_11" source="v1_app_lbo" target="v1_app_lcrm" archimateRelationship="flow_cust_legal"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v1_grp_ssc" archimateElement="grp_ssc">
+        <bounds x="20" y="432" width="700" height="120"/>
+        <child xsi:type="archimate:DiagramObject" id="v1_app_dms" targetConnections="conn_v1_8 conn_v1_12 conn_v1_10 conn_v1_5" archimateElement="app_dms">
+          <bounds x="20" y="40" width="640" height="55"/>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="02. Application Cooperation (Target)" id="view_02">
+      <child xsi:type="archimate:DiagramObject" id="v2_grp_front" archimateElement="grp_front">
+        <bounds x="20" y="20" width="700" height="200"/>
+        <child xsi:type="archimate:DiagramObject" id="v2_app_web" targetConnections="conn_v2_2 conn_v2_cc_web" archimateElement="app_web_portal">
+          <bounds x="40" y="40" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v2_app_cc" targetConnections="conn_v2_3" archimateElement="app_call_center">
+          <bounds x="40" y="120" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v2_cc_web" source="v2_app_cc" target="v2_app_web" archimateRelationship="flow_call_cc_web"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v2_1" source="v2_app_cc" target="v2_app_crm" archimateRelationship="flow_call_cc_gen">
+            <bendpoint startX="264" startY="13" endX="-56" endY="53"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v2_app_crm" targetConnections="conn_v2_4 conn_v2_1" archimateElement="app_gen_crm">
+          <bounds x="360" y="80" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v2_3" source="v2_app_crm" target="v2_app_cc" archimateRelationship="flow_call_gen_cc"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v2_2" source="v2_app_crm" target="v2_app_web" archimateRelationship="flow_crm_gen_web"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v2_grp_back" archimateElement="grp_back">
+        <bounds x="20" y="240" width="700" height="220"/>
+        <child xsi:type="archimate:DiagramObject" id="v2_app_bo" targetConnections="conn_v2_8 conn_v2_7" archimateElement="app_bo_suite">
+          <bounds x="40" y="40" width="400" height="150"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v2_4" source="v2_app_bo" target="v2_app_crm" archimateRelationship="flow_cust_bo_gen"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v2_5" source="v2_app_bo" target="v2_app_dms" archimateRelationship="flow_doc_bo_dms"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v2_6" source="v2_app_bo" target="v2_app_dwh" archimateRelationship="flow_dwh_bo">
+            <bendpoint startX="244" startY="29" endX="-96" endY="24"/>
+          </sourceConnection>
+          <child xsi:type="archimate:DiagramObject" id="v2_app_autou" targetConnections="conn_v2_pconf_auto conn_v2_padm_auto conn_v2_brims_auto" archimateElement="app_autou">
+            <bounds x="20" y="30" width="100" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="conn_v2_auto_padm" source="v2_app_autou" target="v2_app_padmin" archimateRelationship="flow_auto_padm"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v2_app_padmin" targetConnections="conn_v2_auto_padm conn_v2_pconf_padm conn_v2_brims_padm" archimateElement="app_padmin">
+            <bounds x="140" y="30" width="100" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="conn_v2_padm_versa" source="v2_app_padmin" target="v2_app_versac" archimateRelationship="flow_padm_versa"/>
+            <sourceConnection xsi:type="archimate:Connection" id="conn_v2_padm_auto" source="v2_app_padmin" target="v2_app_autou" archimateRelationship="flow_padm_auto"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v2_app_versac" targetConnections="conn_v2_brims_versa conn_v2_pconf_versa conn_v2_padm_versa" archimateElement="app_versaclaim">
+            <bounds x="260" y="30" width="100" height="40"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v2_app_pconf" targetConnections="conn_v2_brims_pconf" archimateElement="app_pconfig">
+            <bounds x="80" y="90" width="100" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="conn_v2_pconf_versa" source="v2_app_pconf" target="v2_app_versac" archimateRelationship="serv_pconf_versa"/>
+            <sourceConnection xsi:type="archimate:Connection" id="conn_v2_pconf_padm" source="v2_app_pconf" target="v2_app_padmin" archimateRelationship="serv_pconf_padm"/>
+            <sourceConnection xsi:type="archimate:Connection" id="conn_v2_pconf_auto" source="v2_app_pconf" target="v2_app_autou" archimateRelationship="serv_pconf_auto"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v2_app_brims" archimateElement="app_brims">
+            <bounds x="200" y="90" width="100" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="conn_v2_brims_versa" source="v2_app_brims" target="v2_app_versac" archimateRelationship="serv_brims_versa"/>
+            <sourceConnection xsi:type="archimate:Connection" id="conn_v2_brims_pconf" source="v2_app_brims" target="v2_app_pconf" archimateRelationship="serv_brims_pconf"/>
+            <sourceConnection xsi:type="archimate:Connection" id="conn_v2_brims_padm" source="v2_app_brims" target="v2_app_padmin" archimateRelationship="serv_brims_padm"/>
+            <sourceConnection xsi:type="archimate:Connection" id="conn_v2_brims_auto" source="v2_app_brims" target="v2_app_autou" archimateRelationship="serv_brims_auto"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v2_app_dwh" targetConnections="conn_v2_6" archimateElement="app_dwh">
+          <bounds x="520" y="80" width="120" height="80"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v2_7" source="v2_app_dwh" target="v2_app_bo" archimateRelationship="flow_bo_dwh"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v2_grp_ssc" archimateElement="grp_ssc">
+        <bounds x="20" y="480" width="700" height="120"/>
+        <child xsi:type="archimate:DiagramObject" id="v2_app_dms" targetConnections="conn_v2_5" archimateElement="app_dms">
+          <bounds x="40" y="40" width="600" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v2_8" source="v2_app_dms" target="v2_app_bo" archimateRelationship="flow_doc_dms_bo">
+            <bendpoint startX="-204" startY="-91" endX="-104" endY="101"/>
+          </sourceConnection>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="03. Application Usage" id="view_03">
+      <child xsi:type="archimate:DiagramObject" id="v3_bp_handle" archimateElement="bp_handle">
+        <bounds x="20" y="20" width="700" height="100"/>
+        <child xsi:type="archimate:DiagramObject" id="v3_bp_cap" targetConnections="conn_v3_2 conn_v3_1" archimateElement="bp_capture">
+          <bounds x="20" y="30" width="100" height="50"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v3_proc1" source="v3_bp_cap" target="v3_bp_not" archimateRelationship="flow_proc_cap_not"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v3_bp_not" targetConnections="conn_v3_3 conn_v3_proc1" archimateElement="bp_notify">
+          <bounds x="140" y="30" width="100" height="50"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v3_proc2" source="v3_bp_not" target="v3_bp_val" archimateRelationship="flow_proc_not_val"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v3_bp_val" targetConnections="conn_v3_proc2 conn_v3_4" archimateElement="bp_validate">
+          <bounds x="260" y="30" width="100" height="50"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v3_proc3" source="v3_bp_val" target="v3_bp_inv" archimateRelationship="flow_proc_val_inv"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v3_bp_inv" targetConnections="conn_v3_proc3 conn_v3_6 conn_v3_5" archimateElement="bp_investigate">
+          <bounds x="380" y="30" width="100" height="50"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v3_proc4" source="v3_bp_inv" target="v3_bp_pay" archimateRelationship="flow_proc_inv_pay"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v3_bp_pay" targetConnections="conn_v3_proc4 conn_v3_7" archimateElement="bp_pay">
+          <bounds x="500" y="30" width="100" height="50"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v3_as_scan" targetConnections="conn_v3_8" archimateElement="as_scanning">
+        <bounds x="40" y="150" width="100" height="50"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v3_1" source="v3_as_scan" target="v3_bp_cap" archimateRelationship="serv_scan_cap"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v3_as_cadm" targetConnections="conn_v3_10" archimateElement="as_cust_admin">
+        <bounds x="160" y="150" width="100" height="50"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v3_2" source="v3_as_cadm" target="v3_bp_cap" archimateRelationship="serv_cust_cap"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v3_3" source="v3_as_cadm" target="v3_bp_not" archimateRelationship="serv_cust_not"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v3_as_cladm" targetConnections="conn_v3_11" archimateElement="as_claims_admin">
+        <bounds x="280" y="150" width="100" height="50"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v3_4" source="v3_as_cladm" target="v3_bp_val" archimateRelationship="serv_claims_val"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v3_5" source="v3_as_cladm" target="v3_bp_inv" archimateRelationship="serv_claims_inv"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v3_as_print" targetConnections="conn_v3_9" archimateElement="as_printing">
+        <bounds x="400" y="150" width="100" height="50"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v3_6" source="v3_as_print" target="v3_bp_inv" archimateRelationship="serv_print_inv"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v3_as_pay" targetConnections="conn_v3_12" archimateElement="as_payment">
+        <bounds x="520" y="150" width="100" height="50"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v3_7" source="v3_as_pay" target="v3_bp_pay" archimateRelationship="serv_pay_pay"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v3_app_dms1" archimateElement="app_dms">
+        <bounds x="40" y="250" width="100" height="50"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v3_9" source="v3_app_dms1" target="v3_as_print" archimateRelationship="real_print_dms"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v3_8" source="v3_app_dms1" target="v3_as_scan" archimateRelationship="real_scan_dms"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v3_app_crm1" archimateElement="app_gen_crm">
+        <bounds x="160" y="250" width="100" height="50"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v3_10" source="v3_app_crm1" target="v3_as_cadm" archimateRelationship="real_cust_crm"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v3_app_ha1" archimateElement="app_ha_pol">
+        <bounds x="280" y="250" width="100" height="50"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v3_11" source="v3_app_ha1" target="v3_as_cladm" archimateRelationship="real_claims_ha"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v3_app_ha2" archimateElement="app_ha_fin">
+        <bounds x="520" y="250" width="100" height="50"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v3_12" source="v3_app_ha2" target="v3_as_pay" archimateRelationship="real_pay_ha"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="04. Application Behavior (Target)" id="view_04">
+      <child xsi:type="archimate:DiagramObject" id="v4_app_dwh" archimateElement="app_dwh">
+        <bounds x="50" y="150" width="500" height="150"/>
+        <child xsi:type="archimate:DiagramObject" id="v4_ap_proc" archimateElement="ap_process_data">
+          <bounds x="20" y="30" width="450" height="100"/>
+          <child xsi:type="archimate:DiagramObject" id="v4_ap_agg" targetConnections="conn_v4_7" archimateElement="ap_agg_data">
+            <bounds x="20" y="30" width="100" height="50"/>
+            <sourceConnection xsi:type="archimate:Connection" id="conn_v4_1" source="v4_ap_agg" target="v4_ap_ana" archimateRelationship="trig_agg_ana"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v4_ap_ana" targetConnections="conn_v4_1" archimateElement="ap_anal_data">
+            <bounds x="160" y="30" width="100" height="50"/>
+            <sourceConnection xsi:type="archimate:Connection" id="conn_v4_2" source="v4_ap_ana" target="v4_ap_rep" archimateRelationship="trig_ana_rep"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v4_ap_rep" targetConnections="conn_v4_2" archimateElement="ap_rep_data">
+            <bounds x="300" y="30" width="100" height="50"/>
+            <sourceConnection xsi:type="archimate:Connection" id="conn_v4_4" targetConnections="conn_v4_prof_flow" source="v4_ap_rep" target="v4_bp_calc" archimateRelationship="flow_rep_calc"/>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v4_af_acq" archimateElement="id-ed299afb889e46509e01231cf510d234">
+        <bounds x="90" y="350" width="100" height="50"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v4_7" targetConnections="conn_v4_8" source="v4_af_acq" target="v4_ap_agg" archimateRelationship="flow_acq_agg"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v4_do_real" archimateElement="id-93aca4de44fd457eb96400285dcd6274">
+        <bounds x="240" y="350" width="120" height="50"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v4_8" source="v4_do_real" target="conn_v4_7" archimateRelationship="assoc_real_flow"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v4_bf_und" targetConnections="conn_v4_calc_und" archimateElement="bf_underwriting">
+        <bounds x="200" y="50" width="120" height="50"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v4_bp_calc" targetConnections="conn_v4_4" archimateElement="bp_calc_prem">
+        <bounds x="370" y="50" width="120" height="50"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v4_calc_und" source="v4_bp_calc" target="v4_bf_und" archimateRelationship="flow_calc_und"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v4_do_prof" archimateElement="do_cust_profile">
+        <bounds x="520" y="90" width="120" height="50"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v4_prof_flow" source="v4_do_prof" target="conn_v4_4" archimateRelationship="assoc_prof_flow"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="05. Application Gap Analysis" id="view_05">
+      <child xsi:type="archimate:DiagramObject" id="v5_grp_front" archimateElement="grp_front">
+        <bounds x="20" y="20" width="900" height="180"/>
+        <child xsi:type="archimate:DiagramObject" id="v5_app_web" targetConnections="conn_v5_gen_web conn_v5_crm_l conn_v5_cc_web" fillColor="#00ffff" archimateElement="app_web_portal">
+          <bounds x="30" y="30" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v5_app_lcrm" targetConnections="conn_v5_cc_leg conn_v5_cust_leg" fillColor="#ff9933" archimateElement="app_legal_crm">
+          <bounds x="440" y="30" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_cc_l" lineColor="#ff9933" source="v5_app_lcrm" target="v5_app_cc" archimateRelationship="flow_call_legal_cc">
+            <bendpoint startX="-304" startY="8" endX="106" endY="-72"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_crm_l" lineColor="#ff9933" source="v5_app_lcrm" target="v5_app_web" archimateRelationship="flow_crm_legal_web">
+            <bendpoint startX="-148" startY="-16" endX="262" endY="-16"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v5_app_cc" targetConnections="conn_v5_gen_cc conn_v5_cc_l" fillColor="#00ffff" archimateElement="app_call_center">
+          <bounds x="30" y="110" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_cc_leg" lineColor="#ff9933" source="v5_app_cc" target="v5_app_lcrm" archimateRelationship="flow_call_cc_legal">
+            <bendpoint startX="298" startY="-60" endX="-112" endY="20"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_cc_gen" lineColor="#00ffff" source="v5_app_cc" target="v5_app_crm" archimateRelationship="flow_call_cc_gen">
+            <bendpoint startX="118" startY="12" endX="-132" endY="12"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_cc_web" lineColor="#00ffff" source="v5_app_cc" target="v5_app_web" archimateRelationship="flow_call_cc_web"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v5_app_crm" targetConnections="conn_v5_cc_gen conn_v5_cust_bo conn_v5_cust_auto conn_v5_cust_ha" fillColor="#00ffff" archimateElement="app_gen_crm">
+          <bounds x="280" y="110" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_gen_cc" lineColor="#00ffff" source="v5_app_crm" target="v5_app_cc" archimateRelationship="flow_call_gen_cc"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_gen_web" lineColor="#00ffff" source="v5_app_crm" target="v5_app_web" archimateRelationship="flow_crm_gen_web">
+            <bendpoint startX="-60" startY="-108" endX="190" endY="-28"/>
+          </sourceConnection>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v5_grp_back" archimateElement="grp_back">
+        <bounds x="20" y="220" width="900" height="150"/>
+        <child xsi:type="archimate:DiagramObject" id="v5_app_hafin" targetConnections="conn_v5_ha_bo" fillColor="#ff9933" archimateElement="app_ha_fin">
+          <bounds x="20" y="50" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_doc_haf" lineColor="#ff9933" source="v5_app_hafin" target="v5_app_dms" archimateRelationship="flow_doc_hafin"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_ha_ob" lineColor="#ff9933" source="v5_app_hafin" target="v5_app_hapol" archimateRelationship="flow_ha_ob"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v5_app_hapol" targetConnections="conn_v5_ha_ob" fillColor="#ff9933" archimateElement="app_ha_pol">
+          <bounds x="160" y="50" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_doc_hap" lineColor="#ff9933" source="v5_app_hapol" target="v5_app_dms" archimateRelationship="flow_doc_hapol"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_cust_ha" lineColor="#ff9933" source="v5_app_hapol" target="v5_app_crm" archimateRelationship="flow_cust_ha_gen"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_ha_bo" lineColor="#ff9933" source="v5_app_hapol" target="v5_app_hafin" archimateRelationship="flow_ha_bo"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v5_app_auto" fillColor="#ff9933" archimateElement="app_auto_ins">
+          <bounds x="300" y="50" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_doc_auto" lineColor="#ff9933" source="v5_app_auto" target="v5_app_dms" archimateRelationship="flow_doc_auto"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_cust_auto" lineColor="#ff9933" source="v5_app_auto" target="v5_app_crm" archimateRelationship="flow_cust_auto_gen"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v5_app_lbo" fillColor="#ff9933" archimateElement="app_legal_bo">
+          <bounds x="440" y="50" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_doc_lbo" lineColor="#ff9933" source="v5_app_lbo" target="v5_app_dms" archimateRelationship="flow_doc_legal"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_cust_leg" lineColor="#ff9933" source="v5_app_lbo" target="v5_app_lcrm" archimateRelationship="flow_cust_legal"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v5_app_bo" targetConnections="conn_v5_bo_dwh conn_v5_dms_bo" fillColor="#66ff66" archimateElement="app_bo_suite">
+          <bounds x="580" y="50" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_cust_bo" lineColor="#00ff00" source="v5_app_bo" target="v5_app_crm" archimateRelationship="flow_cust_bo_gen"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_dwh_bo" lineColor="#00ff00" source="v5_app_bo" target="v5_app_dwh" archimateRelationship="flow_dwh_bo">
+            <bendpoint startX="84" startY="16" endX="-76" endY="16"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_doc_bo" lineColor="#00ff00" source="v5_app_bo" target="v5_app_dms" archimateRelationship="flow_doc_bo_dms">
+            <bendpoint startX="24" startY="52" endX="224" endY="-108"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v5_app_dwh" targetConnections="conn_v5_dwh_bo" fillColor="#66ff66" archimateElement="app_dwh">
+          <bounds x="740" y="50" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_bo_dwh" lineColor="#00ff00" source="v5_app_dwh" target="v5_app_bo" archimateRelationship="flow_bo_dwh"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v5_grp_ssc" archimateElement="grp_ssc">
+        <bounds x="20" y="456" width="900" height="120"/>
+        <child xsi:type="archimate:DiagramObject" id="v5_app_dms" targetConnections="conn_v5_doc_haf conn_v5_doc_bo conn_v5_doc_lbo conn_v5_doc_auto conn_v5_doc_hap" fillColor="#00ffff" archimateElement="app_dms">
+          <bounds x="20" y="30" width="840" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v5_dms_bo" lineColor="#00ff00" source="v5_app_dms" target="v5_app_bo" archimateRelationship="flow_doc_dms_bo"/>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="06. Information Structure" id="view_06">
+      <child xsi:type="archimate:DiagramObject" id="v6_bo_cust" archimateElement="bo_cust_rec">
+        <bounds x="250" y="50" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v6_1" source="v6_bo_cust" target="v6_bo_ins_f" archimateRelationship="agg_cust_ins"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v6_bo_ins_f" targetConnections="conn_v6_1" archimateElement="bo_ins_file">
+        <bounds x="250" y="150" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v6_3" source="v6_bo_ins_f" target="v6_bo_ins_p" archimateRelationship="comp_ins_pol"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v6_2" source="v6_bo_ins_f" target="v6_bo_ins_r" archimateRelationship="comp_ins_req"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v6_4" source="v6_bo_ins_f" target="v6_bo_claim" archimateRelationship="comp_ins_claim"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v6_bo_ins_r" targetConnections="conn_v6_2" archimateElement="bo_ins_req">
+        <bounds x="50" y="250" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-504fa7cd6d7f4de28102ebc986bd8d3f" source="v6_bo_ins_r" target="v6_bo_ins_p" archimateRelationship="id-95b469c286da4e0e9d2536e830e3de0c"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v6_bo_ins_p" targetConnections="conn_v6_7 conn_v6_6 conn_v6_5 conn_v6_3 conn_v6_8 id-504fa7cd6d7f4de28102ebc986bd8d3f id-c71a18a335a84743904484e29920621b" archimateElement="bo_ins_pol">
+        <bounds x="250" y="250" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v6_bo_claim" targetConnections="conn_v6_4" archimateElement="bo_claim">
+        <bounds x="450" y="250" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-c71a18a335a84743904484e29920621b" source="v6_bo_claim" target="v6_bo_ins_p" archimateRelationship="id-44032d9561d54761a3d13c7c56f1e6e9"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v6_bo_travel" archimateElement="bo_travel">
+        <bounds x="50" y="350" width="100" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v6_5" source="v6_bo_travel" target="v6_bo_ins_p" archimateRelationship="spec_travel"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v6_bo_home" archimateElement="bo_home">
+        <bounds x="170" y="350" width="100" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v6_6" source="v6_bo_home" target="v6_bo_ins_p" archimateRelationship="spec_home"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v6_bo_auto" archimateElement="bo_auto">
+        <bounds x="290" y="350" width="100" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v6_7" source="v6_bo_auto" target="v6_bo_ins_p" archimateRelationship="spec_auto"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v6_bo_legal" archimateElement="bo_legal">
+        <bounds x="410" y="350" width="100" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v6_8" source="v6_bo_legal" target="v6_bo_ins_p" archimateRelationship="spec_legal"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="07. Data Dissemination" id="view_07">
+      <child xsi:type="archimate:DiagramObject" id="v7_bo_cust" targetConnections="conn_v7_4" archimateElement="bo_cust_rec">
+        <bounds x="50" y="50" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v7_1" source="v7_bo_cust" target="v7_bo_file" archimateRelationship="agg_cust_ins"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v7_bo_file" targetConnections="conn_v7_1" archimateElement="bo_ins_file">
+        <bounds x="350" y="50" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v7_2" source="v7_bo_file" target="v7_bo_pol" archimateRelationship="comp_ins_pol"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v7_3" source="v7_bo_file" target="v7_bo_claim" archimateRelationship="comp_ins_claim"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v7_bo_pol" targetConnections="conn_v7_8 conn_v7_2" archimateElement="bo_ins_pol">
+        <bounds x="250" y="150" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v7_bo_claim" targetConnections="conn_v7_7 conn_v7_3" archimateElement="bo_claim">
+        <bounds x="450" y="150" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v7_do_cust" targetConnections="conn_v7_5" archimateElement="do_cust_data">
+        <bounds x="50" y="250" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v7_4" source="v7_do_cust" target="v7_bo_cust" archimateRelationship="real_do_cust"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v7_app_hapol" archimateElement="app_ha_pol">
+        <bounds x="200" y="250" width="250" height="100"/>
+        <child xsi:type="archimate:DiagramObject" id="v7_as_cacc" archimateElement="as_cust_data_acc">
+          <bounds x="20" y="30" width="100" height="50"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v7_5" source="v7_as_cacc" target="v7_do_cust" archimateRelationship="real_srv_do_cust"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v7_as_pmgt" archimateElement="as_pol_data_mgt">
+          <bounds x="130" y="30" width="100" height="50"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn_v7_6" source="v7_as_pmgt" target="v7_do_pol" archimateRelationship="real_srv_do_pol"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v7_do_claim" archimateElement="do_claim_data">
+        <bounds x="480" y="250" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v7_7" source="v7_do_claim" target="v7_bo_claim" archimateRelationship="real_do_claim"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v7_do_pol" targetConnections="conn_v7_6" archimateElement="do_policy_data">
+        <bounds x="480" y="330" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn_v7_8" source="v7_do_pol" target="v7_bo_pol" archimateRelationship="real_do_policy">
+          <bendpoint startX="-84" startY="-129" endX="146" endY="51"/>
+        </sourceConnection>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="08. Technology Infrastructure (Baseline)" id="view_08">
+      <child xsi:type="archimate:DiagramObject" id="v8_grp_ha" archimateElement="grp_ha_hq" fillColor="#F3F3F3">
+        <bounds x="20" y="20" width="840" height="380"/>
+        <child xsi:type="archimate:DiagramObject" id="v8_grp_front" archimateElement="grp_front" fillColor="#F3F3F3">
+          <bounds x="20" y="20" width="780" height="170"/>
+          <child xsi:type="archimate:DiagramObject" id="v8_dev_web" archimateElement="dev_fo_web_hosting" fillColor="#FFD966" targetConnections="v8_c1">
+            <bounds x="25" y="35" width="170" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v8_n1" source="v8_dev_web" target="v8_net_ha" archimateRelationship="rel_websrv_to_ha_lan" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v8_art_web" archimateElement="art_web_portal_impl" fillColor="#FFD966">
+            <bounds x="30" y="110" width="150" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v8_c1" source="v8_art_web" target="v8_dev_web" archimateRelationship="rel_art_web_to_websrv" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v8_dev_fogp" archimateElement="dev_fo_general_purpose" fillColor="#FFD966" targetConnections="v8_c2 v8_c3 v8_c4">
+            <bounds x="240" y="35" width="170" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v8_n2" source="v8_dev_fogp" target="v8_net_ha" archimateRelationship="rel_fo_gp_to_ha_lan" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v8_art_call" archimateElement="art_call_center_impl" fillColor="#FFD966">
+            <bounds x="225" y="110" width="150" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v8_c2" source="v8_art_call" target="v8_dev_fogp" archimateRelationship="rel_art_call_to_fo_gp" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v8_art_crm" archimateElement="art_crm_sys_impl" fillColor="#FFD966">
+            <bounds x="380" y="110" width="150" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v8_c3" source="v8_art_crm" target="v8_dev_fogp" archimateRelationship="rel_art_crm_to_fo_gp" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v8_art_lcrm" archimateElement="art_legal_crm_impl" fillColor="#4F81BD">
+            <bounds x="535" y="110" width="185" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v8_c4" source="v8_art_lcrm" target="v8_dev_fogp" archimateRelationship="rel_art_lcrm_to_fo_gp" lineColor="#4F81BD"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v8_grp_back" archimateElement="grp_back" fillColor="#F3F3F3">
+          <bounds x="20" y="200" width="780" height="150"/>
+          <child xsi:type="archimate:DiagramObject" id="v8_dev_hacluster" archimateElement="dev_ha_cluster" fillColor="#FFD966" targetConnections="v8_c5 v8_c6">
+            <bounds x="25" y="35" width="220" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v8_n3" source="v8_dev_hacluster" target="v8_net_ha" archimateRelationship="rel_cluster_to_ha_lan" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v8_art_hafin" archimateElement="art_ha_fin_impl" fillColor="#FFD966">
+            <bounds x="35" y="110" width="200" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v8_c5" source="v8_art_hafin" target="v8_dev_hacluster" archimateRelationship="rel_art_hafin_to_cluster" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v8_art_hapol" archimateElement="art_ha_pol_impl" fillColor="#FFD966">
+            <bounds x="250" y="110" width="210" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v8_c6" source="v8_art_hapol" target="v8_dev_hacluster" archimateRelationship="rel_art_hapol_to_cluster" lineColor="#FFD966"/>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v8_grp_profit" archimateElement="grp_profit_hq" fillColor="#F3F3F3">
+        <bounds x="880" y="20" width="520" height="380"/>
+        <child xsi:type="archimate:DiagramObject" id="v8_grp_auto" archimateElement="grp_profit_auto" fillColor="#F3F3F3">
+          <bounds x="20" y="20" width="300" height="150"/>
+          <child xsi:type="archimate:DiagramObject" id="v8_dev_auto" archimateElement="dev_auto_gp" fillColor="#4F81BD" targetConnections="v8_c7">
+            <bounds x="25" y="35" width="200" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v8_n4" source="v8_dev_auto" target="v8_net_profit" archimateRelationship="rel_auto_to_profit_lan" lineColor="#4F81BD"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v8_art_auto" archimateElement="art_auto_ins_impl" fillColor="#4F81BD">
+            <bounds x="35" y="110" width="190" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v8_c7" source="v8_art_auto" target="v8_dev_auto" archimateRelationship="rel_art_auto_to_auto_gp" lineColor="#4F81BD"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v8_grp_ssc" archimateElement="grp_ssc" fillColor="#F3F3F3">
+          <bounds x="20" y="180" width="460" height="150"/>
+          <child xsi:type="archimate:DiagramObject" id="v8_dev_dms" archimateElement="dev_doc_mgmt" fillColor="#FFD966" targetConnections="v8_c8">
+            <bounds x="25" y="205" width="200" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v8_n5" source="v8_dev_dms" target="v8_net_profit" archimateRelationship="rel_doc_to_profit_lan" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v8_art_dms" archimateElement="art_dms_impl" fillColor="#FFD966">
+            <bounds x="35" y="280" width="160" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v8_c8" source="v8_art_dms" target="v8_dev_dms" archimateRelationship="rel_art_dms_to_docsrv" lineColor="#FFD966"/>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v8_grp_legal" archimateElement="grp_legal_hq" fillColor="#F3F3F3">
+        <bounds x="1420" y="20" width="360" height="240"/>
+        <child xsi:type="archimate:DiagramObject" id="v8_grp_legal_back" archimateElement="grp_legal_back" fillColor="#F3F3F3">
+          <bounds x="20" y="20" width="300" height="150"/>
+          <child xsi:type="archimate:DiagramObject" id="v8_dev_legal" archimateElement="dev_legal_gp" fillColor="#4F81BD" targetConnections="v8_c9">
+            <bounds x="25" y="35" width="200" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v8_n6" source="v8_dev_legal" target="v8_net_legal" archimateRelationship="rel_legal_to_legal_lan" lineColor="#4F81BD"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v8_art_legal" archimateElement="art_legal_bo_impl" fillColor="#4F81BD">
+            <bounds x="35" y="110" width="220" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v8_c9" source="v8_art_legal" target="v8_dev_legal" archimateRelationship="rel_art_lbo_to_legal_gp" lineColor="#4F81BD"/>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v8_net_ha" archimateElement="net_ha_lan" fillColor="#FFD966" targetConnections="v8_n1 v8_n2 v8_n3">
+        <bounds x="150" y="460" width="180" height="45"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v8_n7" source="v8_net_ha" target="v8_net_wan" archimateRelationship="rel_ha_lan_to_wan" lineColor="#FFD966"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v8_net_profit" archimateElement="net_profit_lan" fillColor="#FFD966" targetConnections="v8_n4 v8_n5">
+        <bounds x="420" y="460" width="180" height="45"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v8_n8" source="v8_net_profit" target="v8_net_wan" archimateRelationship="rel_profit_lan_to_wan" lineColor="#FFD966"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v8_net_legal" archimateElement="net_legal_lan" fillColor="#4F81BD" targetConnections="v8_n6">
+        <bounds x="690" y="460" width="190" height="45"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v8_n9" source="v8_net_legal" target="v8_net_wan" archimateRelationship="rel_legal_lan_to_wan" lineColor="#4F81BD"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v8_net_wan" archimateElement="net_wan" fillColor="#FFD966" targetConnections="v8_n7 v8_n8 v8_n9">
+        <bounds x="980" y="460" width="260" height="45"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="09. Technology Infrastructure (Target)" id="view_09">
+      <child xsi:type="archimate:DiagramObject" id="v9_grp_ha" archimateElement="grp_ha_hq" fillColor="#F3F3F3">
+        <bounds x="20" y="20" width="880" height="380"/>
+        <child xsi:type="archimate:DiagramObject" id="v9_grp_front" archimateElement="grp_front" fillColor="#F3F3F3">
+          <bounds x="20" y="20" width="820" height="170"/>
+          <child xsi:type="archimate:DiagramObject" id="v9_dev_web" archimateElement="dev_fo_web_hosting" fillColor="#FFD966" targetConnections="v9_c1">
+            <bounds x="25" y="35" width="170" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v9_n1" source="v9_dev_web" target="v9_net_ha" archimateRelationship="rel_websrv_to_ha_lan" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v9_art_web" archimateElement="art_web_portal_impl" fillColor="#FFD966">
+            <bounds x="30" y="110" width="150" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v9_c1" source="v9_art_web" target="v9_dev_web" archimateRelationship="rel_art_web_to_websrv" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v9_dev_fogp" archimateElement="dev_fo_general_purpose" fillColor="#FFD966" targetConnections="v9_c2 v9_c3">
+            <bounds x="235" y="35" width="170" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v9_n2" source="v9_dev_fogp" target="v9_net_ha" archimateRelationship="rel_fo_gp_to_ha_lan" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v9_art_call" archimateElement="art_call_center_impl" fillColor="#FFD966">
+            <bounds x="225" y="110" width="160" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v9_c2" source="v9_art_call" target="v9_dev_fogp" archimateRelationship="rel_art_call_to_fo_gp" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v9_art_crm" archimateElement="art_crm_sys_impl" fillColor="#FFD966">
+            <bounds x="390" y="110" width="170" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v9_c3" source="v9_art_crm" target="v9_dev_fogp" archimateRelationship="rel_art_crm_to_fo_gp" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v9_dev_gateway" archimateElement="dev_data_acq_gateway" fillColor="#F4B183">
+            <bounds x="580" y="35" width="180" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v9_n3" source="v9_dev_gateway" target="v9_net_ha" archimateRelationship="rel_gateway_to_ha_lan" lineColor="#F4B183"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v9_grp_back" archimateElement="grp_back" fillColor="#F3F3F3">
+          <bounds x="20" y="200" width="820" height="160"/>
+          <child xsi:type="archimate:DiagramObject" id="v9_dev_cluster" archimateElement="dev_ha_cluster" fillColor="#FFD966" targetConnections="v9_c4">
+            <bounds x="25" y="35" width="220" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v9_n4" source="v9_dev_cluster" target="v9_net_ha" archimateRelationship="rel_cluster_to_ha_lan" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v9_art_bosuite" archimateElement="art_bo_suite_impl" fillColor="#F4B183">
+            <bounds x="35" y="110" width="220" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v9_c4" source="v9_art_bosuite" target="v9_dev_cluster" archimateRelationship="rel_art_bosuite_to_cluster" lineColor="#F4B183"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v9_dev_docbackup" archimateElement="dev_doc_backup" fillColor="#F4B183" targetConnections="v9_c7">
+            <bounds x="260" y="35" width="220" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v9_n5" source="v9_dev_docbackup" target="v9_net_ha" archimateRelationship="rel_docbackup_to_ha_lan" lineColor="#F4B183"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v9_art_dms_b" archimateElement="art_dms_impl" fillColor="#FFD966">
+            <bounds x="270" y="110" width="180" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v9_c7" source="v9_art_dms_b" target="v9_dev_docbackup" archimateRelationship="rel_art_dms_to_docbackup" lineColor="#FFD966"/>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v9_grp_profit" archimateElement="grp_profit_hq" fillColor="#F3F3F3">
+        <bounds x="930" y="20" width="520" height="380"/>
+        <child xsi:type="archimate:DiagramObject" id="v9_grp_ssc" archimateElement="grp_ssc" fillColor="#F3F3F3">
+          <bounds x="20" y="20" width="480" height="320"/>
+          <child xsi:type="archimate:DiagramObject" id="v9_dev_doc" archimateElement="dev_doc_mgmt" fillColor="#FFD966" targetConnections="v9_c6">
+            <bounds x="25" y="35" width="220" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v9_n6" source="v9_dev_doc" target="v9_net_profit" archimateRelationship="rel_doc_to_profit_lan" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v9_art_dms" archimateElement="art_dms_impl" fillColor="#FFD966">
+            <bounds x="35" y="110" width="180" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v9_c6" source="v9_art_dms" target="v9_dev_doc" archimateRelationship="rel_art_dms_to_docsrv2" lineColor="#FFD966"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v9_dev_backupcluster" archimateElement="dev_ha_backup_cluster" fillColor="#F4B183" targetConnections="v9_c5">
+            <bounds x="260" y="35" width="220" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v9_n7" source="v9_dev_backupcluster" target="v9_net_profit" archimateRelationship="rel_backupcluster_to_profit_lan" lineColor="#F4B183"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v9_art_bosuite_b" archimateElement="art_bo_suite_impl" fillColor="#F4B183">
+            <bounds x="270" y="110" width="220" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="v9_c5" source="v9_art_bosuite_b" target="v9_dev_backupcluster" archimateRelationship="rel_art_bosuite_to_backupcluster" lineColor="#F4B183"/>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v9_net_ha" archimateElement="net_ha_lan" fillColor="#FFD966" targetConnections="v9_n1 v9_n2 v9_n3 v9_n4 v9_n5">
+        <bounds x="150" y="460" width="180" height="45"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v9_n8" source="v9_net_ha" target="v9_net_wan" archimateRelationship="rel_ha_lan_to_wan" lineColor="#FFD966"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v9_net_profit" archimateElement="net_profit_lan" fillColor="#FFD966" targetConnections="v9_n6 v9_n7">
+        <bounds x="420" y="460" width="180" height="45"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v9_n9" source="v9_net_profit" target="v9_net_wan" archimateRelationship="rel_profit_lan_to_wan" lineColor="#FFD966"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v9_net_wan" archimateElement="net_wan" fillColor="#FFD966" targetConnections="v9_n8 v9_n9">
+        <bounds x="690" y="460" width="260" height="45"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="10. IoT Data Acquisition Architecture" id="view_10">
+      <child xsi:type="archimate:DiagramObject" id="v10_grp_smart" archimateElement="grp_smart_home" fillColor="#F3F3F3">
+        <child xsi:type="archimate:DiagramObject" id="v10_fac" archimateElement="fac_smart_home" fillColor="#F3F3F3" targetConnections="v10_a1 v10_a2">
+          <bounds x="450" y="210" width="320" height="170"/>
+        </child>
+        <bounds x="420" y="210" width="420" height="250"/>
+        <child xsi:type="archimate:DiagramObject" id="v10_alarm" archimateElement="eq_home_alarm" fillColor="#FFD966">
+          <bounds x="500" y="260" width="170" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v10_s3" source="v10_alarm" target="v10_iot_general" archimateRelationship="rel_alarm_spec_iot" lineColor="#FFD966"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v10_a1" source="v10_alarm" target="v10_fac" archimateRelationship="rel_alarm_in_home" lineColor="#FFD966"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v10_g3" source="v10_alarm" target="v10_gateway" archimateRelationship="rel_alarm_to_gateway" lineColor="#F4B183"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v10_therm" archimateElement="eq_smart_thermostat" fillColor="#FFD966">
+          <bounds x="690" y="260" width="170" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v10_s4" source="v10_therm" target="v10_iot_general" archimateRelationship="rel_therm_spec_iot" lineColor="#FFD966"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v10_a2" source="v10_therm" target="v10_fac" archimateRelationship="rel_therm_in_home" lineColor="#FFD966"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v10_a3" source="v10_therm" target="v10_energy" archimateRelationship="rel_therm_to_energy" lineColor="#F4B183"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v10_g4" source="v10_therm" target="v10_gateway" archimateRelationship="rel_therm_to_gateway" lineColor="#F4B183"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v10_grp_ha" archimateElement="grp_ha_hq" fillColor="#F3F3F3">
+        <bounds x="930" y="200" width="320" height="220"/>
+        <child xsi:type="archimate:DiagramObject" id="v10_gateway" archimateElement="dev_data_acq_gateway" fillColor="#F4B183" targetConnections="v10_g1 v10_g2 v10_g3 v10_g4">
+          <bounds x="980" y="250" width="190" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v10_iot_general" archimateElement="eq_iot_device_general" fillColor="#FFD966" targetConnections="v10_s1 v10_s2 v10_s3 v10_s4">
+        <bounds x="500" y="40" width="180" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v10_car" archimateElement="eq_car_black_box" fillColor="#FFD966">
+        <bounds x="80" y="220" width="150" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v10_s1" source="v10_car" target="v10_iot_general" archimateRelationship="rel_car_spec_iot" lineColor="#FFD966"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v10_g1" source="v10_car" target="v10_gateway" archimateRelationship="rel_car_to_gateway" lineColor="#F4B183"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v10_fit" archimateElement="eq_fitness_tracker" fillColor="#FFD966">
+        <bounds x="120" y="360" width="150" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v10_s2" source="v10_fit" target="v10_iot_general" archimateRelationship="rel_fit_spec_iot" lineColor="#FFD966"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v10_g2" source="v10_fit" target="v10_gateway" archimateRelationship="rel_fit_to_gateway" lineColor="#F4B183"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v10_energy" archimateElement="net_energy" fillColor="#FFD966" targetConnections="v10_a3">
+        <bounds x="690" y="360" width="220" height="45"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="11. Data Acquisition Gateway Microservices" id="view_11">
+      <child xsi:type="archimate:DiagramObject" id="v11_comm" archimateElement="grp_communication" fillColor="#F3F3F3">
+        <bounds x="380" y="20" width="620" height="180"/>
+        <child xsi:type="archimate:DiagramObject" id="v11_srv_reg" archimateElement="ts_dev_reg" fillColor="#FFD966" targetConnections="v11_r5">
+          <bounds x="400" y="40" width="180" height="50"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11_r2" source="v11_srv_reg" target="v11_api" archimateRelationship="rel_reg_to_api" lineColor="#FFD966"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v11_srv_op" archimateElement="ts_dev_op" fillColor="#FFD966" targetConnections="v11_r6">
+          <bounds x="600" y="40" width="180" height="50"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11_r3" source="v11_srv_op" target="v11_api" archimateRelationship="rel_op_to_api" lineColor="#FFD966"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v11_srv_not" archimateElement="ts_notification" fillColor="#FFD966" targetConnections="v11_r7">
+          <bounds x="800" y="40" width="180" height="50"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11_r4" source="v11_srv_not" target="v11_api" archimateRelationship="rel_notif_to_api" lineColor="#FFD966"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v11_node" archimateElement="node_iot_device" fillColor="#F3F3F3">
+        <bounds x="40" y="80" width="180" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v11_r1" source="v11_node" target="v11_api" archimateRelationship="rel_node_to_api" lineColor="#FFD966"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v11_api" archimateElement="ti_rest_api" fillColor="#F3F3F3" targetConnections="v11_r1 v11_r2 v11_r3 v11_r4">
+        <bounds x="260" y="80" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v11_gw" archimateElement="dev_data_acq_gateway" fillColor="#F4B183" targetConnections="v11_r8 v11_r9">
+        <bounds x="1020" y="40" width="320" height="240"/>
+        <child xsi:type="archimate:DiagramObject" id="v11_func" archimateElement="tf_data_acquisition" fillColor="#F4B183">
+          <bounds x="1040" y="55" width="130" height="45"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11_r5" source="v11_func" target="v11_srv_reg" archimateRelationship="rel_f_to_reg" lineColor="#F4B183"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11_r6" source="v11_func" target="v11_srv_op" archimateRelationship="rel_f_to_op" lineColor="#F4B183"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11_r7" source="v11_func" target="v11_srv_not" archimateRelationship="rel_f_to_notif" lineColor="#F4B183"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v11_container" archimateElement="ss_container" fillColor="#FFD966">
+          <bounds x="1040" y="110" width="120" height="45"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11_r8" source="v11_container" target="v11_gw" archimateRelationship="rel_container_to_gateway" lineColor="#F4B183"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v11_paas" archimateElement="ss_paas_services" fillColor="#FFD966">
+          <bounds x="1175" y="110" width="140" height="45"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11_r9" source="v11_paas" target="v11_gw" archimateRelationship="rel_paas_to_gateway" lineColor="#F4B183"/>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="12. Technology Gap Analysis" id="view_12">
+      <child xsi:type="archimate:DiagramObject" id="v12_base" archimateElement="grp_baseline" fillColor="#EAF2FF">
+        <bounds x="20" y="20" width="520" height="620"/>
+        <child xsi:type="archimate:DiagramObject" id="v12_b1" archimateElement="dev_auto_gp" fillColor="#4F81BD">
+          <bounds x="40" y="60" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_b2" archimateElement="dev_legal_gp" fillColor="#4F81BD">
+          <bounds x="40" y="130" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_b3" archimateElement="art_ha_fin_impl" fillColor="#4F81BD">
+          <bounds x="40" y="200" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_b4" archimateElement="art_ha_pol_impl" fillColor="#4F81BD">
+          <bounds x="40" y="260" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_b5" archimateElement="art_legal_bo_impl" fillColor="#4F81BD">
+          <bounds x="40" y="320" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_b6" archimateElement="art_legal_crm_impl" fillColor="#4F81BD">
+          <bounds x="40" y="380" width="220" height="45"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v12_shared" archimateElement="grp_baseline_target" fillColor="#FFF7D6">
+        <bounds x="560" y="20" width="760" height="620"/>
+        <child xsi:type="archimate:DiagramObject" id="v12_s1" archimateElement="dev_fo_web_hosting" fillColor="#FFD966">
+          <bounds x="580" y="60" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_s2" archimateElement="dev_fo_general_purpose" fillColor="#FFD966">
+          <bounds x="580" y="130" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_s3" archimateElement="dev_ha_cluster" fillColor="#FFD966">
+          <bounds x="580" y="200" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_s4" archimateElement="dev_doc_mgmt" fillColor="#FFD966">
+          <bounds x="580" y="270" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_s5" archimateElement="net_profit_lan" fillColor="#FFD966">
+          <bounds x="580" y="340" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_s6" archimateElement="net_ha_lan" fillColor="#FFD966">
+          <bounds x="580" y="410" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_s7" archimateElement="net_wan" fillColor="#FFD966">
+          <bounds x="580" y="480" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_s8" archimateElement="art_crm_sys_impl" fillColor="#FFD966">
+          <bounds x="820" y="60" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_s9" archimateElement="art_call_center_impl" fillColor="#FFD966">
+          <bounds x="820" y="130" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_s10" archimateElement="art_web_portal_impl" fillColor="#FFD966">
+          <bounds x="820" y="200" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_s11" archimateElement="art_dms_impl" fillColor="#FFD966">
+          <bounds x="820" y="270" width="220" height="45"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v12_target" archimateElement="grp_target" fillColor="#FFF1E6">
+        <bounds x="1340" y="20" width="420" height="620"/>
+        <child xsi:type="archimate:DiagramObject" id="v12_t1" archimateElement="dev_data_acq_gateway" fillColor="#F4B183">
+          <bounds x="1360" y="60" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_t2" archimateElement="dev_ha_backup_cluster" fillColor="#F4B183">
+          <bounds x="1360" y="130" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_t3" archimateElement="dev_doc_backup" fillColor="#F4B183">
+          <bounds x="1360" y="200" width="220" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12_t4" archimateElement="art_bo_suite_impl" fillColor="#F4B183">
+          <bounds x="1360" y="270" width="220" height="45"/>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="13. Migration View" id="view_13">
+      <child xsi:type="archimate:DiagramObject" id="v13_b" archimateElement="pl_baseline" fillColor="#4F81BD">
+        <bounds x="20" y="220" width="250" height="110"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v13_r1" source="v13_b" target="v13_a" archimateRelationship="rel_pl_baseline_a" lineColor="#FFD966"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v13_r2" source="v13_b" target="v13_b2" archimateRelationship="rel_pl_baseline_b" lineColor="#FFD966"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v13_a" archimateElement="pl_transition_a" fillColor="#FFD966" targetConnections="v13_r1">
+        <bounds x="340" y="100" width="250" height="110"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v13_r3" source="v13_a" target="v13_c" archimateRelationship="rel_pl_a_c" lineColor="#FFD966"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v13_b2" archimateElement="pl_transition_b" fillColor="#FFD966" targetConnections="v13_r2">
+        <bounds x="340" y="300" width="250" height="110"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v13_r4" source="v13_b2" target="v13_c" archimateRelationship="rel_pl_b_c" lineColor="#FFD966"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v13_c" archimateElement="pl_transition_c" fillColor="#FFD966" targetConnections="v13_r3 v13_r4">
+        <bounds x="680" y="200" width="250" height="110"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v13_r5" source="v13_c" target="v13_t" archimateRelationship="rel_pl_c_target" lineColor="#F4B183"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v13_t" archimateElement="pl_target" fillColor="#F4B183" targetConnections="v13_r5">
+        <bounds x="1020" y="220" width="250" height="110"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="14. Project Context" id="view_14">
+      <child xsi:type="archimate:DiagramObject" id="v14_proj_crm" archimateElement="wp_crm_integration" fillColor="#F3F3F3">
+        <bounds x="20" y="20" width="320" height="100"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_c1" source="v14_proj_crm" target="v14_rcrm1" archimateRelationship="rel_proj_crm_legalcrm" lineColor="#4F81BD"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_c2" source="v14_proj_crm" target="v14_rcrm2" archimateRelationship="rel_proj_crm_gencrm" lineColor="#FFD966"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_c3" source="v14_proj_crm" target="v14_rcrm3" archimateRelationship="rel_proj_crm_fogp" lineColor="#FFD966"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_proj_bo" archimateElement="wp_back_office_integration" fillColor="#F3F3F3">
+        <bounds x="380" y="20" width="420" height="200"/>
+        <child xsi:type="archimate:DiagramObject" id="v14_wp_sw" archimateElement="wp_software_modification" fillColor="#FFD966" targetConnections="v14_comp1">
+          <bounds x="400" y="70" width="180" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v14_wp_hw" archimateElement="wp_hardware_upgrade" fillColor="#FFD966" targetConnections="v14_comp2">
+          <bounds x="600" y="70" width="180" height="45"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v14_wp_legacy" archimateElement="wp_phasing_out_legacy" fillColor="#FFD966" targetConnections="v14_comp3">
+          <bounds x="400" y="125" width="180" height="45"/>
+        </child>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_c_v14_rbo1" source="v14_proj_bo" target="v14_rbo1" archimateRelationship="rel_proj_bo_hafin" lineColor="#4F81BD"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_c_v14_rbo2" source="v14_proj_bo" target="v14_rbo2" archimateRelationship="rel_proj_bo_auto" lineColor="#4F81BD"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_c_v14_rbo3" source="v14_proj_bo" target="v14_rbo3" archimateRelationship="rel_proj_bo_legalbo" lineColor="#4F81BD"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_c_v14_rbo4" source="v14_proj_bo" target="v14_rbo4" archimateRelationship="rel_proj_bo_bosuite" lineColor="#F4B183"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_c_v14_rbo5" source="v14_proj_bo" target="v14_rbo5" archimateRelationship="rel_proj_bo_cluster" lineColor="#FFD966"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_c_v14_rbo6" source="v14_proj_bo" target="v14_rbo6" archimateRelationship="rel_proj_bo_autogp" lineColor="#4F81BD"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_c_v14_rbo7" source="v14_proj_bo" target="v14_rbo7" archimateRelationship="rel_proj_bo_legalgp" lineColor="#4F81BD"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_c_v14_rbo8" source="v14_proj_bo" target="v14_rbo8" archimateRelationship="rel_proj_bo_backupcluster" lineColor="#F4B183"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_comp1" source="v14_proj_bo" target="v14_wp_sw" archimateRelationship="rel_wp_bo_sw" lineColor="#FFD966"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_comp2" source="v14_proj_bo" target="v14_wp_hw" archimateRelationship="rel_wp_bo_hw" lineColor="#FFD966"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_comp3" source="v14_proj_bo" target="v14_wp_legacy" archimateRelationship="rel_wp_bo_legacy" lineColor="#FFD966"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_proj_dwh" archimateElement="wp_data_warehousing_bi" fillColor="#F3F3F3">
+        <bounds x="860" y="20" width="300" height="100"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_c_v14_rdwh1" source="v14_proj_dwh" target="v14_rdwh1" archimateRelationship="rel_proj_dwh_app" lineColor="#F4B183"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v14_c_v14_rdwh2" source="v14_proj_dwh" target="v14_rdwh2" archimateRelationship="rel_proj_dwh_gateway" lineColor="#F4B183"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_rcrm1" archimateElement="app_legal_crm" fillColor="#4F81BD" targetConnections="v14_c1">
+        <bounds x="20" y="170" width="280" height="45"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_rcrm2" archimateElement="app_gen_crm" fillColor="#FFD966" targetConnections="v14_c2">
+        <bounds x="20" y="230" width="280" height="45"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_rcrm3" archimateElement="dev_fo_general_purpose" fillColor="#FFD966" targetConnections="v14_c3">
+        <bounds x="20" y="290" width="280" height="45"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_rbo1" archimateElement="app_ha_fin" fillColor="#4F81BD" targetConnections="v14_c_v14_rbo1">
+        <bounds x="390" y="260" width="250" height="45"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_rbo2" archimateElement="app_auto_ins" fillColor="#4F81BD" targetConnections="v14_c_v14_rbo2">
+        <bounds x="390" y="320" width="250" height="45"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_rbo3" archimateElement="app_legal_bo" fillColor="#4F81BD" targetConnections="v14_c_v14_rbo3">
+        <bounds x="390" y="380" width="250" height="45"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_rbo4" archimateElement="app_bo_suite" fillColor="#F4B183" targetConnections="v14_c_v14_rbo4">
+        <bounds x="600" y="260" width="250" height="45"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_rbo5" archimateElement="dev_ha_cluster" fillColor="#FFD966" targetConnections="v14_c_v14_rbo5">
+        <bounds x="600" y="320" width="250" height="45"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_rbo6" archimateElement="dev_auto_gp" fillColor="#4F81BD" targetConnections="v14_c_v14_rbo6">
+        <bounds x="600" y="380" width="250" height="45"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_rbo7" archimateElement="dev_legal_gp" fillColor="#4F81BD" targetConnections="v14_c_v14_rbo7">
+        <bounds x="600" y="440" width="250" height="45"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_rbo8" archimateElement="dev_ha_backup_cluster" fillColor="#F4B183" targetConnections="v14_c_v14_rbo8">
+        <bounds x="600" y="500" width="250" height="45"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_rdwh1" archimateElement="app_dwh" fillColor="#F4B183" targetConnections="v14_c_v14_rdwh1">
+        <bounds x="860" y="170" width="280" height="45"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_rdwh2" archimateElement="dev_data_acq_gateway" fillColor="#F4B183" targetConnections="v14_c_v14_rdwh2">
+        <bounds x="860" y="230" width="280" height="45"/>
+      </child>
+    </element>
+  </folder>
+</archimate:model>
