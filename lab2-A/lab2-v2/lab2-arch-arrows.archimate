@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="lab2-complete" id="id-0cde019c07584070847e40a8fe39e05b" version="5.0.0">
+  <folder name="Strategy" id="id-8a3c2993f1064db2aaec77eae5a495eb" type="strategy">
+    <element xsi:type="archimate:ValueStream" name="Acquire Insurance Product" id="vs_acquire"/>
+    <element xsi:type="archimate:ValueStream" name="01 Develop Products" id="vs_dev"/>
+    <element xsi:type="archimate:ValueStream" name="02 Market and Sell Products" id="vs_market"/>
+    <element xsi:type="archimate:ValueStream" name="03 Manage Policies and Claims" id="vs_manage"/>
+    <element xsi:type="archimate:ValueStream" name="04 Serve Customers" id="vs_serve"/>
+    <element xsi:type="archimate:Capability" name="Business Management" id="cap_bus_mgt"/>
+    <element xsi:type="archimate:Capability" name="Product Management" id="cap_prod_mgt"/>
+    <element xsi:type="archimate:Capability" name="Marketing" id="cap_marketing"/>
+    <element xsi:type="archimate:Capability" name="Sales And Distribution" id="cap_sales_dist"/>
+    <element xsi:type="archimate:Capability" name="Customer Management" id="cap_cust_mgt"/>
+    <element xsi:type="archimate:Capability" name="Asset Management" id="cap_asset_mgt"/>
+    <element xsi:type="archimate:Capability" name="Money Market Management" id="cap_money_mgt"/>
+    <element xsi:type="archimate:Capability" name="Policy and Claim Management" id="cap_policy_mgt"/>
+    <element xsi:type="archimate:Capability" name="Business Support" id="cap_bus_sup"/>
+    <element xsi:type="archimate:Capability" name="Data-Driven Insurance" id="cap_data_ins"/>
+    <element xsi:type="archimate:Capability" name="Digital Customer Management" id="cap_dig_cust"/>
+    <element xsi:type="archimate:Capability" name="Data Acquisition" id="cap_data_acq"/>
+    <element xsi:type="archimate:Capability" name="Data Analysis" id="cap_data_anal"/>
+    <element xsi:type="archimate:Capability" name="Digital Channel Management" id="cap_dig_chan"/>
+    <element xsi:type="archimate:Resource" name="Enterprise-Wide CRM Automation" id="res_crm"/>
+    <element xsi:type="archimate:Resource" name="Staff with Social Media Competency" id="res_staff_sm"/>
+    <element xsi:type="archimate:Resource" name="Social Media Apps" id="res_sm_apps"/>
+    <element xsi:type="archimate:Resource" name="Integrated Back Office Automation" id="res_bo_auto"/>
+    <element xsi:type="archimate:Resource" name="Data Sources" id="res_data_src"/>
+    <element xsi:type="archimate:Resource" name="Data Analysis Automation" id="res_data_auto"/>
+    <element xsi:type="archimate:Resource" name="Staff with Data Analysis Competency" id="res_staff_data"/>
+    <element xsi:type="archimate:Capability" name="Strategic Management" id="cap_strat"/>
+    <element xsi:type="archimate:Capability" name="Fiscal &amp; Accounting Management" id="cap_fiscal"/>
+    <element xsi:type="archimate:Capability" name="Risk &amp; Compliance Management" id="cap_risk"/>
+    <element xsi:type="archimate:Capability" name="Performance Management" id="cap_perf"/>
+    <element xsi:type="archimate:Capability" name="Enterprise Architecture" id="cap_ea"/>
+    <element xsi:type="archimate:Capability" name="Product Definition" id="cap_prod_def"/>
+    <element xsi:type="archimate:Capability" name="Product Engineering" id="cap_prod_eng"/>
+    <element xsi:type="archimate:Capability" name="Market Development" id="cap_mkt_dev"/>
+    <element xsi:type="archimate:Capability" name="Campaign Management" id="cap_camp_mgt"/>
+    <element xsi:type="archimate:Capability" name="Distribution Channel Management" id="cap_dist_mgt"/>
+    <element xsi:type="archimate:Capability" name="Sales Execution" id="cap_sales_exec"/>
+    <element xsi:type="archimate:Capability" name="Customer Contact Management" id="cap_cust_cont"/>
+    <element xsi:type="archimate:Capability" name="Customer Relation Management" id="cap_cust_rel"/>
+    <element xsi:type="archimate:Capability" name="Service Channel Management" id="cap_serv_chan"/>
+    <element xsi:type="archimate:Capability" name="Customer Data Management" id="cap_cust_data"/>
+    <element xsi:type="archimate:Capability" name="Investment Strategy Management" id="cap_inv_strat"/>
+    <element xsi:type="archimate:Capability" name="Investment Performance Management" id="cap_inv_perf"/>
+    <element xsi:type="archimate:Capability" name="Investment Portfolio Management" id="cap_inv_port"/>
+    <element xsi:type="archimate:Capability" name="Asset Inventory Maintenance" id="cap_asset_inv"/>
+    <element xsi:type="archimate:Capability" name="Banking Management" id="cap_bank"/>
+    <element xsi:type="archimate:Capability" name="Accounts Management" id="cap_acc"/>
+    <element xsi:type="archimate:Capability" name="Cash Flow Management" id="cap_cash"/>
+    <element xsi:type="archimate:Capability" name="Money Management" id="cap_money"/>
+    <element xsi:type="archimate:Capability" name="Contract Lifecycle Management" id="cap_cont_life"/>
+    <element xsi:type="archimate:Capability" name="Claim Settlement" id="cap_claim_settle"/>
+    <element xsi:type="archimate:Capability" name="Contract Administration" id="cap_cont_admin"/>
+    <element xsi:type="archimate:Capability" name="Claim Administration" id="cap_claim_admin"/>
+    <element xsi:type="archimate:Capability" name="Organization Development" id="cap_org_dev"/>
+    <element xsi:type="archimate:Capability" name="HR Management" id="cap_hr"/>
+    <element xsi:type="archimate:Capability" name="Process Management" id="cap_proc"/>
+    <element xsi:type="archimate:Capability" name="Office Management" id="cap_office"/>
+    <element xsi:type="archimate:Capability" name="Facility Management" id="cap_fac"/>
+    <element xsi:type="archimate:Capability" name="IT Management" id="cap_it"/>
+  </folder>
+  <folder name="Business" id="id-c7189f0d6ff44dcc9710421d3c650594" type="business">
+    <element xsi:type="archimate:BusinessActor" name="ArchiSurance" id="act_arch"/>
+    <element xsi:type="archimate:BusinessActor" name="Front Office" id="act_front"/>
+    <element xsi:type="archimate:BusinessActor" name="Back Office" id="act_back"/>
+    <element xsi:type="archimate:BusinessActor" name="Shared Service Center" id="act_ssc"/>
+    <element xsi:type="archimate:BusinessActor" name="Homeowner's &amp; Travel Back Office" id="act_home_back"/>
+    <element xsi:type="archimate:BusinessActor" name="Legal Expense Back Office" id="act_legal_back"/>
+    <element xsi:type="archimate:BusinessActor" name="Auto Back Office" id="act_auto_back"/>
+    <element xsi:type="archimate:BusinessActor" name="Client" id="act_client"/>
+    <element xsi:type="archimate:BusinessActor" name="Bank" id="act_bank"/>
+    <element xsi:type="archimate:BusinessRole" name="Customer" id="role_cust"/>
+    <element xsi:type="archimate:BusinessFunction" name="Marketing" id="bf_marketing"/>
+    <element xsi:type="archimate:BusinessFunction" name="Actuarial" id="bf_actuarial"/>
+    <element xsi:type="archimate:BusinessFunction" name="Customer Relations" id="bf_customer"/>
+    <element xsi:type="archimate:BusinessFunction" name="Underwriting" id="bf_underwriting"/>
+    <element xsi:type="archimate:BusinessFunction" name="Claims" id="bf_claims"/>
+    <element xsi:type="archimate:BusinessFunction" name="Sales" id="bf_sales"/>
+    <element xsi:type="archimate:BusinessFunction" name="Finance" id="bf_finance"/>
+    <element xsi:type="archimate:BusinessFunction" name="Document Processing" id="bf_doc"/>
+    <element xsi:type="archimate:BusinessFunction" name="Investment Management" id="bf_invest"/>
+    <element xsi:type="archimate:BusinessFunction" name="Claims Submission" id="bf_client_claims"/>
+    <element xsi:type="archimate:BusinessFunction" name="Buying Insurance" id="bf_client_buy"/>
+    <element xsi:type="archimate:BusinessFunction" name="Information Provisioning" id="bf_client_info"/>
+    <element xsi:type="archimate:BusinessFunction" name="Banking" id="bf_bank_banking"/>
+    <element xsi:type="archimate:BusinessService" name="Policy Administration Service" id="bs_policy_admin"/>
+    <element xsi:type="archimate:BusinessService" name="Financial Service" id="bs_financial"/>
+    <element xsi:type="archimate:BusinessService" name="CRM Data Access" id="bs_crm_access"/>
+    <element xsi:type="archimate:BusinessEvent" name="Request For Insurance Received" id="ev_req"/>
+    <element xsi:type="archimate:BusinessEvent" name="Claim Received" id="ev_claim_rec"/>
+    <element xsi:type="archimate:BusinessEvent" name="Claim Rejected" id="ev_claim_rej"/>
+    <element xsi:type="archimate:BusinessProcess" name="Issue New Policy" id="bp_issue"/>
+    <element xsi:type="archimate:BusinessProcess" name="Underwrite Risk" id="bp_underwrite"/>
+    <element xsi:type="archimate:BusinessProcess" name="Produce Policy" id="bp_produce"/>
+    <element xsi:type="archimate:BusinessProcess" name="Accept Policy" id="bp_accept"/>
+    <element xsi:type="archimate:BusinessProcess" name="L1 Handle Claim" id="bp_handle"/>
+    <element xsi:type="archimate:BusinessProcess" name="Capture Information" id="bp_capture"/>
+    <element xsi:type="archimate:BusinessProcess" name="Notify Additional Stakeholders" id="bp_notify"/>
+    <element xsi:type="archimate:BusinessProcess" name="Validate" id="bp_validate"/>
+    <element xsi:type="archimate:BusinessProcess" name="Investigate" id="bp_investigate"/>
+    <element xsi:type="archimate:BusinessProcess" name="Pay" id="bp_pay"/>
+    <element xsi:type="archimate:BusinessProcess" name="Calculate Insurance Premium" id="bp_calc"/>
+    <element xsi:type="archimate:BusinessActor" name="Business Intelligence Team" id="id-ee723651987946b1a98d0048886b3876"/>
+    <element xsi:type="archimate:BusinessActor" name="Customer Service" id="id-3c7bd22541ab4dd197bc02d265cbd6d6"/>
+  </folder>
+  <folder name="Application" id="id-fd6458499f5742d3a87a126dc3db79bb" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="ArchiSurance Back Office Suite" id="app_bo_suite"/>
+    <element xsi:type="archimate:ApplicationComponent" name="General CRM System" id="app_crm"/>
+    <element xsi:type="archimate:ApplicationComponent" name="MyArchiSurance Mobile App" id="app_mobile"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Data Warehousing Solution" id="app_dwh"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="id-b030985f71aa4d9d83853ba0ca38d1d0" type="technology">
+    <element xsi:type="archimate:Node" name="ArchiSurance Back-Up Server Cluster" id="node_backup"/>
+    <element xsi:type="archimate:Node" name="ArchiSurance General-Purpose Server Cluster" id="node_gp"/>
+    <element xsi:type="archimate:Node" name="FO General-Purpose Server" id="node_fo"/>
+    <element xsi:type="archimate:Artifact" name="Back Office Suite Implementation" id="art_bo"/>
+    <element xsi:type="archimate:Artifact" name="CRM System Implementation" id="art_crm"/>
+    <element xsi:type="archimate:Equipment" name="Smart Connected Devices" id="id-fcddc488fdd14c1b94d27212cf9ab276"/>
+  </folder>
+  <folder name="Motivation" id="id-fc958494d0204be686c5c97d48451b2d" type="motivation">
+    <element xsi:type="archimate:Value" name="Innovative Insurance Products" id="val_dev"/>
+    <element xsi:type="archimate:Value" name="Products offered and Sold to The Right Customers" id="val_market"/>
+    <element xsi:type="archimate:Value" name="Products Perform According to Customer" id="val_manage"/>
+    <element xsi:type="archimate:Value" name="High Customer Satisfaction" id="val_serve"/>
+    <element xsi:type="archimate:Outcome" name="Attractive Insurance Offering" id="out_attr"/>
+    <element xsi:type="archimate:Requirement" name="Shared Back Office Application for all Products" id="req_shared"/>
+    <element xsi:type="archimate:Requirement" name="Support for Policy Administration" id="req_supp_policy"/>
+    <element xsi:type="archimate:Requirement" name="Support for Financial Transactions" id="req_supp_fin"/>
+    <element xsi:type="archimate:Requirement" name="CRM Data Should Be Maintained Centrally" id="req_crm_cent"/>
+  </folder>
+  <folder name="Implementation &amp; Migration" id="id-b3e51b8accf24ac9b6c42b924030820b" type="implementation_migration"/>
+  <folder name="Other" id="id-3337de37f7424dabaa3d334adade1c3d" type="other">
+    <element xsi:type="archimate:Location" name="Home &amp; Away" id="loc_home"/>
+    <element xsi:type="archimate:Location" name="Legally Yours" id="loc_legally"/>
+    <element xsi:type="archimate:Location" name="PRO-FIT" id="loc_profit"/>
+    <element xsi:type="archimate:Junction" name="Junction" id="id-1ea761d35ca441b18adf1a6fc62987d2" type="or"/>
+    <element xsi:type="archimate:Junction" name="Junction" id="id-632212f351ac4db681124a5a8773ebca"/>
+  </folder>
+  <folder name="Relations" id="id-835ea513ae404e45897aaa4b07f1ee50" type="relations">
+    <element xsi:type="archimate:CompositionRelationship" id="rel_10" source="vs_acquire" target="vs_dev"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_11" source="vs_acquire" target="vs_market"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_12" source="vs_acquire" target="vs_manage"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_13" source="vs_acquire" target="vs_serve"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_1" source="act_arch" target="act_front"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_2" source="act_arch" target="act_back"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_3" source="act_arch" target="act_ssc"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_4" source="act_back" target="act_home_back"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_5" source="act_back" target="act_legal_back"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_6" source="act_back" target="act_auto_back"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_7" source="act_home_back" target="loc_home"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_8" source="act_legal_back" target="loc_legally"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_9" source="act_auto_back" target="loc_profit"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel_14" source="vs_dev" target="vs_market"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel_15" source="vs_market" target="vs_manage"/>
+    <element xsi:type="archimate:FlowRelationship" id="rel_16" source="vs_manage" target="vs_serve"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_17" source="vs_dev" target="val_dev"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_18" source="vs_market" target="val_market"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_19" source="vs_manage" target="val_manage"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_20" source="vs_serve" target="val_serve"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_21" source="vs_serve" target="out_attr"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel_22" source="role_cust" target="out_attr"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c1" source="cap_bus_mgt" target="cap_strat"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c2" source="cap_bus_mgt" target="cap_fiscal"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c3" source="cap_bus_mgt" target="cap_risk"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c4" source="cap_bus_mgt" target="cap_perf"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c5" source="cap_bus_mgt" target="cap_ea"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c6" source="cap_prod_mgt" target="cap_prod_def"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c7" source="cap_prod_mgt" target="cap_prod_eng"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c8" source="cap_marketing" target="cap_mkt_dev"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c9" source="cap_marketing" target="cap_camp_mgt"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c10" source="cap_sales_dist" target="cap_dist_mgt"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c11" source="cap_sales_dist" target="cap_sales_exec"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c12" source="cap_cust_mgt" target="cap_cust_cont"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c13" source="cap_cust_mgt" target="cap_cust_rel"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c14" source="cap_cust_mgt" target="cap_serv_chan"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c15" source="cap_cust_mgt" target="cap_cust_data"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c16" source="cap_asset_mgt" target="cap_inv_strat"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c17" source="cap_asset_mgt" target="cap_inv_perf"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c18" source="cap_asset_mgt" target="cap_inv_port"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c19" source="cap_asset_mgt" target="cap_asset_inv"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c20" source="cap_money_mgt" target="cap_bank"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c21" source="cap_money_mgt" target="cap_acc"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c22" source="cap_money_mgt" target="cap_cash"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c23" source="cap_money_mgt" target="cap_money"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c24" source="cap_policy_mgt" target="cap_cont_life"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c25" source="cap_policy_mgt" target="cap_claim_settle"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c26" source="cap_policy_mgt" target="cap_cont_admin"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c27" source="cap_policy_mgt" target="cap_claim_admin"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c28" source="cap_bus_sup" target="cap_org_dev"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c29" source="cap_bus_sup" target="cap_hr"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c30" source="cap_bus_sup" target="cap_proc"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c31" source="cap_bus_sup" target="cap_office"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c32" source="cap_bus_sup" target="cap_fac"/>
+    <element xsi:type="archimate:CompositionRelationship" id="rel_c33" source="cap_bus_sup" target="cap_it"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel_s1" source="cap_prod_mgt" target="vs_dev"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel_s2" source="cap_marketing" target="vs_market"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel_s3" source="cap_policy_mgt" target="vs_manage"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel_s4" source="cap_sales_dist" target="vs_market"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel_s5" source="cap_cust_mgt" target="vs_serve"/>
+    <element xsi:type="archimate:FlowRelationship" name="claims" id="f14_1" source="bf_client_claims" target="bf_customer"/>
+    <element xsi:type="archimate:FlowRelationship" name="claims" id="f14_2" source="bf_customer" target="bf_claims"/>
+    <element xsi:type="archimate:FlowRelationship" name="customer info" id="f14_3" source="bf_customer" target="bf_sales"/>
+    <element xsi:type="archimate:FlowRelationship" name="requests" id="f14_4" source="bf_client_buy" target="bf_sales"/>
+    <element xsi:type="archimate:FlowRelationship" name="policies" id="f14_5" source="bf_sales" target="bf_client_buy"/>
+    <element xsi:type="archimate:FlowRelationship" name="product info" id="f14_6" source="bf_marketing" target="bf_client_info"/>
+    <element xsi:type="archimate:FlowRelationship" name="customer info" id="f14_7" source="bf_client_info" target="bf_marketing"/>
+    <element xsi:type="archimate:FlowRelationship" name="new contracts, premiums due" id="f14_8" source="bf_sales" target="bf_finance"/>
+    <element xsi:type="archimate:FlowRelationship" name="claim payments due" id="f14_9" source="bf_claims" target="bf_finance"/>
+    <element xsi:type="archimate:FlowRelationship" name="premium payment status" id="f14_10" source="bf_finance" target="bf_claims"/>
+    <element xsi:type="archimate:FlowRelationship" name="policies" id="f14_11" source="bf_claims" target="bf_underwriting"/>
+    <element xsi:type="archimate:FlowRelationship" name="financial risk" id="f14_12" source="bf_actuarial" target="bf_finance"/>
+    <element xsi:type="archimate:FlowRelationship" name="money" id="f14_13" source="bf_actuarial" target="bf_invest"/>
+    <element xsi:type="archimate:FlowRelationship" name="premium info" id="f14_14" source="bf_actuarial" target="bf_underwriting"/>
+    <element xsi:type="archimate:FlowRelationship" name="premium info" id="f14_15" source="bf_actuarial" target="bf_marketing"/>
+    <element xsi:type="archimate:FlowRelationship" name="money" id="f14_16" source="bf_finance" target="bf_invest"/>
+    <element xsi:type="archimate:FlowRelationship" name="money" id="f14_17" source="bf_invest" target="bf_finance"/>
+    <element xsi:type="archimate:FlowRelationship" name="money" id="f14_18" source="bf_invest" target="bf_bank_banking"/>
+    <element xsi:type="archimate:FlowRelationship" name="money" id="f14_19" source="bf_bank_banking" target="bf_invest"/>
+    <element xsi:type="archimate:FlowRelationship" name="documents" id="f14_20" source="bf_doc" target="bf_claims"/>
+    <element xsi:type="archimate:FlowRelationship" name="documents" id="f14_21" source="bf_doc" target="bf_actuarial"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r15_1" source="bf_customer" target="cap_cust_mgt"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r15_2" source="bf_claims" target="cap_policy_mgt"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r15_3" source="bf_underwriting" target="cap_policy_mgt"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r15_4" source="bf_actuarial" target="cap_prod_mgt"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r15_5" source="bf_finance" target="cap_money"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r15_6" source="bf_invest" target="cap_asset_mgt"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="t16_1" source="ev_req" target="bp_underwrite"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="t16_2" source="bp_underwrite" target="bp_produce"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="t16_3" source="bp_produce" target="bp_accept"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c16_1" source="bp_issue" target="bp_underwrite"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c16_2" source="bp_issue" target="bp_produce"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c16_3" source="bp_issue" target="bp_accept"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="t16_4" source="ev_claim_rec" target="bp_capture"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="t16_5" source="bp_capture" target="bp_notify"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="t16_6" source="bp_notify" target="bp_validate"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="t16_7" source="bp_validate" target="bp_investigate"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="t16_8" source="bp_investigate" target="id-1ea761d35ca441b18adf1a6fc62987d2"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="t16_9" source="bp_investigate" target="ev_claim_rej"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c16_4" source="bp_handle" target="bp_capture"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c16_5" source="bp_handle" target="bp_notify"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c16_6" source="bp_handle" target="bp_validate"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c16_7" source="bp_handle" target="bp_investigate"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c16_8" source="bp_handle" target="bp_pay"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r17_1" source="bp_calc" target="id-632212f351ac4db681124a5a8773ebca"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r17_2" source="bp_issue" target="id-632212f351ac4db681124a5a8773ebca"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r17_3" source="bp_handle" target="id-632212f351ac4db681124a5a8773ebca"/>
+    <element xsi:type="archimate:AggregationRelationship" id="ag18_1" source="req_shared" target="req_supp_policy"/>
+    <element xsi:type="archimate:AggregationRelationship" id="ag18_2" source="req_shared" target="req_supp_fin"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r18_1" source="bs_policy_admin" target="req_supp_policy"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r18_2" source="bs_financial" target="req_supp_fin"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r18_3" source="bp_handle" target="req_supp_fin"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r18_4" source="bs_crm_access" target="req_crm_cent"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r18_5" source="bp_handle" target="req_crm_cent"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r18_6" source="app_bo_suite" target="bs_policy_admin"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r18_7" source="app_bo_suite" target="bs_financial"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r18_8" source="app_crm" target="bs_crm_access"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r18_9" source="art_bo" target="app_bo_suite"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r18_10" source="art_crm" target="app_crm"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c19_1" source="cap_data_ins" target="cap_data_acq"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c19_2" source="cap_data_ins" target="cap_data_anal"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c19_3" source="cap_dig_cust" target="cap_dig_chan"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r21_1" source="app_crm" target="res_crm"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r21_2" source="app_bo_suite" target="res_bo_auto"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r21_3" source="id-ee723651987946b1a98d0048886b3876" target="res_staff_sm"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r21_4" source="app_mobile" target="res_sm_apps"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r21_5" source="id-fcddc488fdd14c1b94d27212cf9ab276" target="res_data_src"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r21_6" source="app_dwh" target="res_data_auto"/>
+    <element xsi:type="archimate:RealizationRelationship" id="r21_7" source="id-3c7bd22541ab4dd197bc02d265cbd6d6" target="res_staff_data"/>
+    <element xsi:type="archimate:FlowRelationship" name="claims" id="f14_1" source="bf_client_claims" target="bf_customer"/>
+    <element xsi:type="archimate:FlowRelationship" name="claims" id="f14_2" source="bf_customer" target="bf_claims"/>
+    <element xsi:type="archimate:FlowRelationship" name="customer info" id="f14_3" source="bf_customer" target="bf_sales"/>
+    <element xsi:type="archimate:FlowRelationship" name="requests" id="f14_4" source="bf_client_buy" target="bf_sales"/>
+    <element xsi:type="archimate:FlowRelationship" name="policies" id="f14_5" source="bf_sales" target="bf_client_buy"/>
+    <element xsi:type="archimate:FlowRelationship" name="product info" id="f14_6" source="bf_marketing" target="bf_client_info"/>
+    <element xsi:type="archimate:FlowRelationship" name="customer info" id="f14_7" source="bf_client_info" target="bf_marketing"/>
+    <element xsi:type="archimate:FlowRelationship" name="new contracts, premiums due" id="f14_8" source="bf_sales" target="bf_finance"/>
+    <element xsi:type="archimate:FlowRelationship" name="claim payments due" id="f14_9" source="bf_claims" target="bf_finance"/>
+    <element xsi:type="archimate:FlowRelationship" name="premium payment status" id="f14_10" source="bf_finance" target="bf_claims"/>
+    <element xsi:type="archimate:FlowRelationship" name="policies" id="f14_11" source="bf_underwriting" target="bf_claims"/>
+    <element xsi:type="archimate:FlowRelationship" name="financial obligations" id="f14_22" source="bf_underwriting" target="bf_finance"/>
+    <element xsi:type="archimate:FlowRelationship" name="financial risk" id="f14_12" source="bf_actuarial" target="bf_finance"/>
+    <element xsi:type="archimate:FlowRelationship" name="money" id="f14_13" source="bf_actuarial" target="bf_invest"/>
+    <element xsi:type="archimate:FlowRelationship" name="premium info" id="f14_14" source="bf_actuarial" target="bf_underwriting"/>
+    <element xsi:type="archimate:FlowRelationship" name="premium info" id="f14_15" source="bf_actuarial" target="bf_marketing"/>
+    <element xsi:type="archimate:FlowRelationship" name="money" id="f14_16" source="bf_finance" target="bf_invest"/>
+    <element xsi:type="archimate:FlowRelationship" name="money" id="f14_17" source="bf_invest" target="bf_finance"/>
+    <element xsi:type="archimate:FlowRelationship" name="money" id="f14_18" source="bf_invest" target="bf_bank_banking"/>
+    <element xsi:type="archimate:FlowRelationship" name="money" id="f14_19" source="bf_bank_banking" target="bf_invest"/>
+    <element xsi:type="archimate:FlowRelationship" name="documents" id="f14_20" source="bf_doc" target="bf_actuarial"/>
+    <element xsi:type="archimate:FlowRelationship" name="documents" id="f14_21" source="bf_doc" target="bf_actuarial"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="a14_1" source="act_front" target="bf_customer"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="a14_2" source="act_front" target="bf_sales"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="a14_3" source="act_front" target="bf_marketing"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="a14_4" source="act_back" target="bf_claims"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="a14_5" source="act_back" target="bf_finance"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="a14_6" source="act_back" target="bf_underwriting"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="a14_7" source="act_back" target="bf_actuarial"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="a14_8" source="act_back" target="bf_invest"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="a14_9" source="act_ssc" target="bf_doc"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-2f508d065a914e3aa3ce73bd87f394e3" source="bf_actuarial" target="cap_policy_mgt"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-fd1de19dbfdb4597816e80f711331c7e" source="bf_finance" target="cap_asset_mgt"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-44249ce664f04f69bf44e1a7bb7196f6" source="id-1ea761d35ca441b18adf1a6fc62987d2" target="ev_claim_rej"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-9a93939abc0542189167033ae22c80c8" source="id-1ea761d35ca441b18adf1a6fc62987d2" target="bp_pay"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-7971fc5a2af740d69eceaa8c8410525b" source="id-632212f351ac4db681124a5a8773ebca" target="vs_manage"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-afe5266be2b14767b9ec2f0c2d5aad7e" source="bs_policy_admin" target="bp_handle"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-2d524830c61c42b7b9040cb6d13f2ca3" source="bs_crm_access" target="app_bo_suite"/>
+    <element xsi:type="archimate:ServingRelationship" id="s18_1" source="bs_policy_admin" target="bp_handle"/>
+    <element xsi:type="archimate:ServingRelationship" id="s18_2" source="bs_financial" target="bp_handle"/>
+    <element xsi:type="archimate:ServingRelationship" id="s18_3" source="bs_crm_access" target="bp_handle"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="a18_1" source="node_backup" target="art_bo"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="a18_2" source="node_gp" target="art_bo"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="a18_3" source="node_gp" target="art_crm"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="a18_4" source="node_fo" target="art_crm"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-5272c4ff9aad47798666db9270b8d0da" source="res_staff_data" target="cap_data_anal"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-2dbb8e90919c4b5092f434540301fc8c" source="res_data_src" target="cap_data_acq"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-077e8f9f68bf424595e3f80a020ff547" source="res_staff_sm" target="cap_dig_chan"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-e6bc9f227248408c9757e0a6c122e52d" source="res_data_auto" target="cap_data_anal"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-81288de44478425e99ce43357d1649ce" source="res_sm_apps" target="cap_dig_chan"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-9f26e4d1126642a48e5dacfe7cccef1c" source="res_bo_auto" target="cap_policy_mgt"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-ad4ac111eb154f5a93cd49b8768106b7" source="res_crm" target="cap_cust_mgt"/>
+  </folder>
+  <folder name="Views" id="id-a8ccadae81d749daaf0ec46dc34fcd35" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="01. Organization Structure" id="id-209aea49204c481bac6d3721cbaa5ddf">
+      <child xsi:type="archimate:DiagramObject" id="id-91c37da708f840c4befa73b4fc6726da" archimateElement="act_arch">
+        <bounds x="420" y="109" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-ed00e47873944295adf08abec5dd685f" source="id-91c37da708f840c4befa73b4fc6726da" target="id-c9e44c21004c481db91202d95b09789d" archimateRelationship="rel_1"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-6d534bfb521640e3a173e369d195b100" source="id-91c37da708f840c4befa73b4fc6726da" target="id-ede8dbb5ea5747aa8f4ea327971cae88" archimateRelationship="rel_2"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-734c3d9f3b294616892c5a456a616381" source="id-91c37da708f840c4befa73b4fc6726da" target="id-7c955d001c47413490004d3271bda8fd" archimateRelationship="rel_3"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-c9e44c21004c481db91202d95b09789d" targetConnections="id-ed00e47873944295adf08abec5dd685f" archimateElement="act_front">
+        <bounds x="210" y="252" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-ede8dbb5ea5747aa8f4ea327971cae88" targetConnections="id-6d534bfb521640e3a173e369d195b100" archimateElement="act_back">
+        <bounds x="420" y="264" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-9a41621fa0e445f78005c6492b3edc18" source="id-ede8dbb5ea5747aa8f4ea327971cae88" target="id-486cfbaf77964af7ae757024c1950f8a" archimateRelationship="rel_4"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-9d182bfeacbc4b4baa922b52786f6b2e" source="id-ede8dbb5ea5747aa8f4ea327971cae88" target="id-511118706e084383a7c64d544d26a23a" archimateRelationship="rel_5"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-40ebf3423a4f4d618312dfc934a5e323" source="id-ede8dbb5ea5747aa8f4ea327971cae88" target="id-2e81c74a43be4e30b27f3c137d5edecf" archimateRelationship="rel_6"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-7c955d001c47413490004d3271bda8fd" targetConnections="id-734c3d9f3b294616892c5a456a616381" archimateElement="act_ssc">
+        <bounds x="633" y="252" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-486cfbaf77964af7ae757024c1950f8a" targetConnections="id-9a41621fa0e445f78005c6492b3edc18" archimateElement="act_home_back">
+        <bounds x="244" y="440" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-37712dec780c42a195e93780a41470e6" source="id-486cfbaf77964af7ae757024c1950f8a" target="id-d42fe11d0833441590aa2783ea045ae8" archimateRelationship="rel_7"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-511118706e084383a7c64d544d26a23a" targetConnections="id-9d182bfeacbc4b4baa922b52786f6b2e" archimateElement="act_legal_back">
+        <bounds x="420" y="440" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-3dd9fad1944f4049bb61428765a11a4b" source="id-511118706e084383a7c64d544d26a23a" target="id-cbf1a96d90e34f6883302c8ac656f173" archimateRelationship="rel_8"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-2e81c74a43be4e30b27f3c137d5edecf" targetConnections="id-40ebf3423a4f4d618312dfc934a5e323" archimateElement="act_auto_back">
+        <bounds x="633" y="466" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-a649c2dcb5a94dc68d22faf1104844ee" source="id-2e81c74a43be4e30b27f3c137d5edecf" target="id-4487afb3a32841039f4c97593ae072d2" archimateRelationship="rel_9"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-d42fe11d0833441590aa2783ea045ae8" targetConnections="id-37712dec780c42a195e93780a41470e6" archimateElement="loc_home">
+        <bounds x="228" y="588" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-cbf1a96d90e34f6883302c8ac656f173" targetConnections="id-3dd9fad1944f4049bb61428765a11a4b" archimateElement="loc_legally">
+        <bounds x="396" y="600" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-4487afb3a32841039f4c97593ae072d2" targetConnections="id-a649c2dcb5a94dc68d22faf1104844ee" archimateElement="loc_profit">
+        <bounds x="648" y="600" width="120" height="55"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="02. Organization Decomposition (Fig 10)" id="id-5ceb6b062e9e4f86922eb503aa0c9dfd">
+      <child xsi:type="archimate:DiagramObject" id="id-archi-main" archimateElement="act_arch">
+        <bounds x="20" y="20" width="760" height="340"/>
+        <child xsi:type="archimate:DiagramObject" id="id-front-box" archimateElement="act_front">
+          <bounds x="20" y="40" width="720" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-back-box" archimateElement="act_back">
+          <bounds x="20" y="120" width="720" height="120"/>
+          <child xsi:type="archimate:DiagramObject" id="id-home-box" archimateElement="act_home_back">
+            <bounds x="60" y="40" width="160" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-legal-box" archimateElement="act_legal_back">
+            <bounds x="280" y="40" width="160" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-auto-box" archimateElement="act_auto_back">
+            <bounds x="500" y="40" width="160" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-ssc-box" archimateElement="act_ssc">
+          <bounds x="20" y="260" width="720" height="60"/>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="03. Value Stream (Fig 11)" id="id-val-stream-view">
+      <child xsi:type="archimate:DiagramObject" id="v11-val-dev" targetConnections="v11-conn-17" archimateElement="val_dev">
+        <bounds x="40" y="40" width="160" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v11-val-market" targetConnections="v11-conn-18" archimateElement="val_market">
+        <bounds x="220" y="40" width="160" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v11-val-manage" targetConnections="v11-conn-19" archimateElement="val_manage">
+        <bounds x="400" y="40" width="160" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v11-val-serve" targetConnections="v11-conn-20" archimateElement="val_serve">
+        <bounds x="580" y="40" width="160" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v11-role-cust" archimateElement="role_cust">
+        <bounds x="800" y="40" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v11-conn-22" source="v11-role-cust" target="v11-out-attr" archimateRelationship="rel_22"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v11-vs-main" archimateElement="vs_acquire">
+        <bounds x="20" y="140" width="740" height="120"/>
+        <child xsi:type="archimate:DiagramObject" id="v11-vs-dev-box" archimateElement="vs_dev">
+          <bounds x="40" y="35" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11-conn-17" source="v11-vs-dev-box" target="v11-val-dev" archimateRelationship="rel_17"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11-conn-14" source="v11-vs-dev-box" target="v11-vs-market-box" archimateRelationship="rel_14"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v11-vs-market-box" targetConnections="v11-conn-14" archimateElement="vs_market">
+          <bounds x="210" y="35" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11-conn-18" source="v11-vs-market-box" target="v11-val-market" archimateRelationship="rel_18"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11-conn-15" source="v11-vs-market-box" target="v11-vs-manage-box" archimateRelationship="rel_15"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v11-vs-manage-box" targetConnections="v11-conn-15" archimateElement="vs_manage">
+          <bounds x="380" y="35" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11-conn-19" source="v11-vs-manage-box" target="v11-val-manage" archimateRelationship="rel_19"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11-conn-16" source="v11-vs-manage-box" target="v11-vs-serve-box" archimateRelationship="rel_16"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v11-vs-serve-box" targetConnections="v11-conn-16" archimateElement="vs_serve">
+          <bounds x="550" y="35" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11-conn-21" source="v11-vs-serve-box" target="v11-out-attr" archimateRelationship="rel_21"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v11-conn-20" source="v11-vs-serve-box" target="v11-val-serve" archimateRelationship="rel_20"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v11-out-attr" targetConnections="v11-conn-21 v11-conn-22" archimateElement="out_attr">
+        <bounds x="800" y="172" width="120" height="55"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="04. Capability Map (Fig 12)" id="id-cap-map-view">
+      <child xsi:type="archimate:DiagramObject" id="v12-mgt" archimateElement="cap_bus_mgt">
+        <bounds x="20" y="20" width="880" height="120"/>
+        <child xsi:type="archimate:DiagramObject" id="v12-strat" archimateElement="cap_strat">
+          <bounds x="20" y="40" width="160" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-fiscal" archimateElement="cap_fiscal">
+          <bounds x="190" y="40" width="160" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-risk" archimateElement="cap_risk">
+          <bounds x="360" y="40" width="160" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-perf" archimateElement="cap_perf">
+          <bounds x="530" y="40" width="160" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-ea" archimateElement="cap_ea">
+          <bounds x="700" y="40" width="160" height="60"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v12-prod-grp" archimateElement="cap_prod_mgt">
+        <bounds x="20" y="160" width="190" height="180"/>
+        <child xsi:type="archimate:DiagramObject" id="v12-pdef" archimateElement="cap_prod_def">
+          <bounds x="15" y="40" width="160" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-peng" archimateElement="cap_prod_eng">
+          <bounds x="15" y="110" width="160" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v12-mkt-grp" archimateElement="cap_marketing">
+        <bounds x="220" y="160" width="190" height="180"/>
+        <child xsi:type="archimate:DiagramObject" id="v12-mdev" archimateElement="cap_mkt_dev">
+          <bounds x="15" y="40" width="160" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-camp" archimateElement="cap_camp_mgt">
+          <bounds x="15" y="110" width="160" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v12-sales-grp" archimateElement="cap_sales_dist">
+        <bounds x="420" y="160" width="190" height="180"/>
+        <child xsi:type="archimate:DiagramObject" id="v12-dist" archimateElement="cap_dist_mgt">
+          <bounds x="15" y="40" width="160" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-exec" archimateElement="cap_sales_exec">
+          <bounds x="15" y="110" width="160" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v12-cust-grp" archimateElement="cap_cust_mgt">
+        <bounds x="620" y="160" width="280" height="180"/>
+        <child xsi:type="archimate:DiagramObject" id="v12-ccont" archimateElement="cap_cust_cont">
+          <bounds x="10" y="40" width="125" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-crel" archimateElement="cap_cust_rel">
+          <bounds x="145" y="40" width="125" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-cserv" archimateElement="cap_serv_chan">
+          <bounds x="10" y="110" width="125" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-cdata" archimateElement="cap_cust_data">
+          <bounds x="145" y="110" width="125" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v12-asset-grp" archimateElement="cap_asset_mgt">
+        <bounds x="20" y="360" width="280" height="220"/>
+        <child xsi:type="archimate:DiagramObject" id="v12-invs" archimateElement="cap_inv_strat">
+          <bounds x="10" y="40" width="125" height="70"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-invp" archimateElement="cap_inv_perf">
+          <bounds x="145" y="40" width="125" height="70"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-invpo" archimateElement="cap_inv_port">
+          <bounds x="10" y="125" width="125" height="70"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-ainv" archimateElement="cap_asset_inv">
+          <bounds x="145" y="125" width="125" height="70"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v12-money-grp" archimateElement="cap_money_mgt">
+        <bounds x="310" y="360" width="280" height="220"/>
+        <child xsi:type="archimate:DiagramObject" id="v12-bank" archimateElement="cap_bank">
+          <bounds x="10" y="40" width="125" height="70"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-acc" archimateElement="cap_acc">
+          <bounds x="145" y="40" width="125" height="70"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-cash" archimateElement="cap_cash">
+          <bounds x="10" y="125" width="125" height="70"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-money" archimateElement="cap_money">
+          <bounds x="145" y="125" width="125" height="70"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v12-policy-grp" archimateElement="cap_policy_mgt">
+        <bounds x="600" y="360" width="300" height="220"/>
+        <child xsi:type="archimate:DiagramObject" id="v12-clife" archimateElement="cap_cont_life">
+          <bounds x="10" y="40" width="135" height="70"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-cset" archimateElement="cap_claim_settle">
+          <bounds x="155" y="40" width="135" height="70"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-cadm" archimateElement="cap_cont_admin">
+          <bounds x="10" y="125" width="135" height="70"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-cladm" archimateElement="cap_claim_admin">
+          <bounds x="155" y="125" width="135" height="70"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v12-support" archimateElement="cap_bus_sup">
+        <bounds x="20" y="600" width="880" height="120"/>
+        <child xsi:type="archimate:DiagramObject" id="v12-odev" archimateElement="cap_org_dev">
+          <bounds x="15" y="40" width="135" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-hr" archimateElement="cap_hr">
+          <bounds x="160" y="40" width="135" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-proc" archimateElement="cap_proc">
+          <bounds x="305" y="40" width="135" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-off" archimateElement="cap_office">
+          <bounds x="450" y="40" width="135" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-fac" archimateElement="cap_fac">
+          <bounds x="595" y="40" width="135" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v12-it" archimateElement="cap_it">
+          <bounds x="740" y="40" width="130" height="60"/>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="05. Value Stream Cross-Mapping (Fig 13)" id="id-vs-cap-view">
+      <child xsi:type="archimate:DiagramObject" id="v13-prod" archimateElement="cap_prod_mgt">
+        <bounds x="20" y="20" width="180" height="170"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v13-c1" source="v13-prod" target="v13-vs-dev" archimateRelationship="rel_s1"/>
+        <child xsi:type="archimate:DiagramObject" id="v13-pdef" archimateElement="cap_prod_def">
+          <bounds x="15" y="40" width="150" height="50"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v13-peng" archimateElement="cap_prod_eng">
+          <bounds x="15" y="100" width="150" height="50"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v13-mkt" archimateElement="cap_marketing">
+        <bounds x="220" y="20" width="180" height="170"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v13-c2" source="v13-mkt" target="v13-vs-market" archimateRelationship="rel_s2"/>
+        <child xsi:type="archimate:DiagramObject" id="v13-mdev" archimateElement="cap_mkt_dev">
+          <bounds x="15" y="40" width="150" height="50"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v13-camp" archimateElement="cap_camp_mgt">
+          <bounds x="15" y="100" width="150" height="50"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v13-pol" archimateElement="cap_policy_mgt">
+        <bounds x="420" y="20" width="460" height="170"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v13-c3" source="v13-pol" target="v13-vs-manage" archimateRelationship="rel_s3"/>
+        <child xsi:type="archimate:DiagramObject" id="v13-clife" archimateElement="cap_cont_life">
+          <bounds x="15" y="40" width="130" height="50"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v13-cadm" archimateElement="cap_cont_admin">
+          <bounds x="15" y="100" width="130" height="50"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v13-cset" archimateElement="cap_claim_settle">
+          <bounds x="160" y="40" width="130" height="50"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v13-cladm" archimateElement="cap_claim_admin">
+          <bounds x="160" y="100" width="130" height="50"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v13-dins" archimateElement="cap_data_ins">
+          <bounds x="310" y="40" width="130" height="50"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v13-vs-main" archimateElement="vs_acquire">
+        <bounds x="20" y="220" width="860" height="110"/>
+        <child xsi:type="archimate:DiagramObject" id="v13-vs-dev" targetConnections="v13-c1" archimateElement="vs_dev">
+          <bounds x="30" y="30" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v13-f1" source="v13-vs-dev" target="v13-vs-market" archimateRelationship="rel_14"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v13-vs-market" targetConnections="v13-c2 v13-c4 v13-f1" archimateElement="vs_market">
+          <bounds x="240" y="30" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v13-f2" source="v13-vs-market" target="v13-vs-manage" archimateRelationship="rel_15"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v13-vs-manage" targetConnections="v13-c3 v13-f2" archimateElement="vs_manage">
+          <bounds x="450" y="30" width="150" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="v13-f3" source="v13-vs-manage" target="v13-vs-serve" archimateRelationship="rel_16"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v13-vs-serve" targetConnections="v13-c5 v13-f3" archimateElement="vs_serve">
+          <bounds x="660" y="30" width="150" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v13-sales" archimateElement="cap_sales_dist">
+        <bounds x="220" y="360" width="180" height="170"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v13-c4" source="v13-sales" target="v13-vs-market" archimateRelationship="rel_s4"/>
+        <child xsi:type="archimate:DiagramObject" id="v13-dist" archimateElement="cap_dist_mgt">
+          <bounds x="15" y="40" width="150" height="50"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v13-exec" archimateElement="cap_sales_exec">
+          <bounds x="15" y="100" width="150" height="50"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v13-cust" archimateElement="cap_cust_mgt">
+        <bounds x="420" y="360" width="460" height="170"/>
+        <sourceConnection xsi:type="archimate:Connection" id="v13-c5" source="v13-cust" target="v13-vs-serve" archimateRelationship="rel_s5"/>
+        <child xsi:type="archimate:DiagramObject" id="v13-ccont" archimateElement="cap_cust_cont">
+          <bounds x="15" y="40" width="130" height="50"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v13-cserv" archimateElement="cap_serv_chan">
+          <bounds x="15" y="100" width="130" height="50"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v13-crel" archimateElement="cap_cust_rel">
+          <bounds x="160" y="40" width="130" height="50"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v13-cdata" archimateElement="cap_cust_data">
+          <bounds x="160" y="100" width="130" height="50"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v13-digc" archimateElement="cap_dig_cust">
+          <bounds x="310" y="40" width="130" height="50"/>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="06. Business Function (Fig 14)" id="view_14">
+      <child xsi:type="archimate:DiagramObject" id="v14_client" archimateElement="act_client">
+        <bounds x="20" y="20" width="160" height="305"/>
+        <child xsi:type="archimate:DiagramObject" id="v14_bf_claims_sub" archimateElement="bf_client_claims">
+          <bounds x="15" y="36" width="130" height="61"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_1" source="v14_bf_claims_sub" target="v14_bf_cust" archimateRelationship="f14_1"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v14_bf_buy" targetConnections="conn14_5" archimateElement="bf_client_buy">
+          <bounds x="15" y="132" width="130" height="59"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_4" source="v14_bf_buy" target="v14_bf_sales" archimateRelationship="f14_4">
+            <bendpoint startX="188" startY="-13" endX="-188" endY="-27"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v14_bf_info" targetConnections="conn14_6" archimateElement="bf_client_info">
+          <bounds x="15" y="204" width="130" height="61"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_7" source="v14_bf_info" target="v14_bf_mkt" archimateRelationship="f14_7">
+            <bendpoint startX="104" startY="-11" endX="-164" endY="-11"/>
+          </sourceConnection>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_front" archimateElement="act_front">
+        <bounds x="396" y="24" width="160" height="301"/>
+        <child xsi:type="archimate:DiagramObject" id="v14_bf_cust" targetConnections="conn14_1" archimateElement="bf_customer">
+          <bounds x="15" y="40" width="130" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_2" source="v14_bf_cust" target="v14_bf_claims" archimateRelationship="f14_2"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_3" source="v14_bf_cust" target="v14_bf_sales" archimateRelationship="f14_3"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v14_bf_sales" targetConnections="conn14_3 conn14_4" archimateElement="bf_sales">
+          <bounds x="15" y="144" width="130" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_8" source="v14_bf_sales" target="v14_bf_fin" archimateRelationship="f14_8">
+            <bendpoint startX="124" endX="-116"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_5" source="v14_bf_sales" target="v14_bf_buy" archimateRelationship="f14_5"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v14_bf_mkt" targetConnections="conn14_15 conn14_7" archimateElement="bf_marketing">
+          <bounds x="15" y="228" width="130" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_6" source="v14_bf_mkt" target="v14_bf_info" archimateRelationship="f14_6"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_back" archimateElement="act_back">
+        <bounds x="768" y="20" width="541" height="305"/>
+        <child xsi:type="archimate:DiagramObject" id="v14_bf_claims" targetConnections="conn14_2 conn14_10 conn14_11" archimateElement="bf_claims">
+          <bounds x="15" y="12" width="130" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_9" source="v14_bf_claims" target="v14_bf_fin" archimateRelationship="f14_9">
+            <bendpoint startX="-32" startY="50" endX="-32" endY="-48"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v14_bf_fin" targetConnections="conn14_8 conn14_9 conn14_12 conn14_17 conn14_22" archimateElement="bf_finance">
+          <bounds x="15" y="132" width="130" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_10" source="v14_bf_fin" target="v14_bf_claims" archimateRelationship="f14_10">
+            <bendpoint startX="52" startY="-60" endX="52" endY="38"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_16" source="v14_bf_fin" target="v14_bf_inv" archimateRelationship="f14_16">
+            <bendpoint startX="352" startY="2" endX="-28" endY="-106"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v14_bf_act" targetConnections="conn14_21 conn14_20" archimateElement="bf_actuarial">
+          <bounds x="15" y="216" width="130" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_12" source="v14_bf_act" target="v14_bf_fin" archimateRelationship="f14_12"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_13" source="v14_bf_act" target="v14_bf_inv" archimateRelationship="f14_13"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_14" source="v14_bf_act" target="v14_bf_und" archimateRelationship="f14_14">
+            <bendpoint startX="412" startY="-22" endX="44" endY="128"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_15" source="v14_bf_act" target="v14_bf_mkt" archimateRelationship="f14_15"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v14_bf_und" targetConnections="conn14_14" archimateElement="bf_underwriting">
+          <bounds x="384" y="66" width="130" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_11" source="v14_bf_und" target="v14_bf_claims" archimateRelationship="f14_11"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_22" source="v14_bf_und" target="v14_bf_fin" archimateRelationship="f14_22">
+            <bendpoint startX="-40" startY="56" endX="328" endY="-10"/>
+            <bendpoint startX="-172" startY="56" endX="196" endY="-10"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v14_bf_inv" targetConnections="conn14_13 conn14_16 conn14_19" archimateElement="bf_invest">
+          <bounds x="396" y="240" width="130" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_17" source="v14_bf_inv" target="v14_bf_fin" archimateRelationship="f14_17">
+            <bendpoint startX="-52" startY="-82" endX="328" endY="26"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_18" source="v14_bf_inv" target="v14_bf_bank" archimateRelationship="f14_18"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_ssc" archimateElement="act_ssc">
+        <bounds x="780" y="408" width="160" height="100"/>
+        <child xsi:type="archimate:DiagramObject" id="v14_bf_doc" archimateElement="bf_doc">
+          <bounds x="15" y="35" width="130" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_21" source="v14_bf_doc" target="v14_bf_act" archimateRelationship="f14_21">
+            <bendpoint startX="-20" startY="-122" endX="-32" endY="110"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_20" source="v14_bf_doc" target="v14_bf_act" archimateRelationship="f14_20">
+            <bendpoint startX="40" startY="-158" endX="28" endY="74"/>
+          </sourceConnection>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v14_bank" archimateElement="act_bank">
+        <bounds x="1092" y="408" width="160" height="100"/>
+        <child xsi:type="archimate:DiagramObject" id="v14_bf_bank" targetConnections="conn14_18" archimateElement="bf_bank_banking">
+          <bounds x="15" y="35" width="130" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn14_19" source="v14_bf_bank" target="v14_bf_inv" archimateRelationship="f14_19">
+            <bendpoint startX="136" startY="-14" endX="32" endY="182"/>
+          </sourceConnection>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="07. Capability Realization (Fig 15)" id="view_15">
+      <child xsi:type="archimate:DiagramObject" id="v15_cap_cust" targetConnections="conn15_1" archimateElement="cap_cust_mgt">
+        <bounds x="20" y="20" width="130" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v15_cap_pol" targetConnections="conn15_2 conn15_3 id-d8e40cbabbe24d1a8d6061092eaccba9" archimateElement="cap_policy_mgt">
+        <bounds x="170" y="20" width="130" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v15_cap_prod" targetConnections="conn15_4" archimateElement="cap_prod_mgt">
+        <bounds x="320" y="20" width="130" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v15_cap_mm" archimateElement="cap_money_mgt">
+        <bounds x="470" y="20" width="130" height="40"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-b74b8039683347fc9df3f45f0f0c7d94" source="v15_cap_mm" target="v15_cap_m" archimateRelationship="rel_c23"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v15_cap_ass" targetConnections="conn15_6 id-cb55ea297c37490db349487885ab95aa" archimateElement="cap_asset_mgt">
+        <bounds x="620" y="20" width="130" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v15_bf_cust" archimateElement="bf_customer">
+        <bounds x="20" y="160" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn15_1" source="v15_bf_cust" target="v15_cap_cust" archimateRelationship="r15_1"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v15_bf_claims" archimateElement="bf_claims">
+        <bounds x="100" y="240" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn15_2" source="v15_bf_claims" target="v15_cap_pol" archimateRelationship="r15_2"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v15_bf_und" archimateElement="bf_underwriting">
+        <bounds x="240" y="240" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn15_3" source="v15_bf_und" target="v15_cap_pol" archimateRelationship="r15_3"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v15_bf_act" archimateElement="bf_actuarial">
+        <bounds x="320" y="160" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn15_4" source="v15_bf_act" target="v15_cap_prod" archimateRelationship="r15_4"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-d8e40cbabbe24d1a8d6061092eaccba9" source="v15_bf_act" target="v15_cap_pol" archimateRelationship="id-2f508d065a914e3aa3ce73bd87f394e3"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v15_bf_fin" archimateElement="bf_finance">
+        <bounds x="470" y="228" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn15_5" source="v15_bf_fin" target="v15_cap_m" archimateRelationship="r15_5"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-cb55ea297c37490db349487885ab95aa" source="v15_bf_fin" target="v15_cap_ass" archimateRelationship="id-fd1de19dbfdb4597816e80f711331c7e">
+          <bendpoint startX="65" startY="-67" endX="-85" endY="121"/>
+          <bendpoint startX="113" startY="-67" endX="-37" endY="121"/>
+          <bendpoint startX="113" startY="-103" endX="-37" endY="85"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v15_bf_inv" archimateElement="bf_invest">
+        <bounds x="624" y="228" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn15_6" source="v15_bf_inv" target="v15_cap_ass" archimateRelationship="r15_6"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v15_cap_m" targetConnections="conn15_5 id-b74b8039683347fc9df3f45f0f0c7d94" archimateElement="cap_money">
+        <bounds x="480" y="132" width="110" height="55"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="08. Business Process (Fig 16)" id="view_16">
+      <child xsi:type="archimate:DiagramObject" id="v16_ev1" archimateElement="ev_req">
+        <bounds x="20" y="50" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn16_1" source="v16_ev1" target="v16_bp_und" archimateRelationship="t16_1"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v16_issue" archimateElement="bp_issue">
+        <bounds x="160" y="20" width="460" height="100"/>
+        <child xsi:type="archimate:DiagramObject" id="v16_bp_und" targetConnections="conn16_1" archimateElement="bp_underwrite">
+          <bounds x="20" y="35" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn16_2" source="v16_bp_und" target="v16_bp_prod" archimateRelationship="t16_2"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v16_bp_prod" targetConnections="conn16_2" archimateElement="bp_produce">
+          <bounds x="170" y="35" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn16_3" source="v16_bp_prod" target="v16_bp_acc" archimateRelationship="t16_3"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v16_bp_acc" targetConnections="conn16_3" archimateElement="bp_accept">
+          <bounds x="320" y="35" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v16_ev2" archimateElement="ev_claim_rec">
+        <bounds x="20" y="190" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn16_4" source="v16_ev2" target="v16_bp_cap" archimateRelationship="t16_4"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v16_handle" archimateElement="bp_handle">
+        <bounds x="160" y="160" width="897" height="100"/>
+        <child xsi:type="archimate:DiagramObject" id="v16_bp_cap" targetConnections="conn16_4" archimateElement="bp_capture">
+          <bounds x="20" y="35" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn16_5" source="v16_bp_cap" target="v16_bp_not" archimateRelationship="t16_5"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v16_bp_not" targetConnections="conn16_5" archimateElement="bp_notify">
+          <bounds x="170" y="35" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn16_6" source="v16_bp_not" target="v16_bp_val" archimateRelationship="t16_6"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v16_bp_val" targetConnections="conn16_6" archimateElement="bp_validate">
+          <bounds x="320" y="35" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="conn16_7" source="v16_bp_val" target="v16_bp_inv" archimateRelationship="t16_7"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v16_bp_inv" targetConnections="conn16_7" archimateElement="bp_investigate">
+          <bounds x="470" y="35" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8fddcc4b20b34845ac2744b73b1934f1" source="v16_bp_inv" target="id-057154dd6876437d9d91f1bf1fa78581" archimateRelationship="t16_8"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v16_bp_pay" targetConnections="id-ccdfd34b31774f6096102462e63dc7c4" archimateElement="bp_pay">
+          <bounds x="756" y="35" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-057154dd6876437d9d91f1bf1fa78581" targetConnections="id-8fddcc4b20b34845ac2744b73b1934f1" archimateElement="id-1ea761d35ca441b18adf1a6fc62987d2">
+          <bounds x="672" y="48" width="15" height="15"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7144aa5beaea411faf8f13e093a62d30" source="id-057154dd6876437d9d91f1bf1fa78581" target="v16_ev3" archimateRelationship="id-44249ce664f04f69bf44e1a7bb7196f6">
+            <bendpoint startX="1" startY="73" endX="-132" endY="-15"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ccdfd34b31774f6096102462e63dc7c4" source="id-057154dd6876437d9d91f1bf1fa78581" target="v16_bp_pay" archimateRelationship="id-9a93939abc0542189167033ae22c80c8"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v16_ev3" targetConnections="id-7144aa5beaea411faf8f13e093a62d30" archimateElement="ev_claim_rej">
+        <bounds x="912" y="276" width="120" height="55"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="09. VS Realized by Business Processes (Fig 17)" id="view_17">
+      <child xsi:type="archimate:DiagramObject" id="v17_vs_mng" targetConnections="id-c568a50a5ab244ecb352bfe96995bb73" archimateElement="vs_manage">
+        <bounds x="170" y="20" width="140" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v17_bp_calc" archimateElement="bp_calc">
+        <bounds x="20" y="192" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn17_1" source="v17_bp_calc" target="id-d518a3b59f9b46e780b643c0fc785006" archimateRelationship="r17_1">
+          <bendpoint startX="47" startY="-99" endX="-112" endY="-3"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v17_bp_iss" archimateElement="bp_issue">
+        <bounds x="170" y="192" width="140" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn17_2" source="v17_bp_iss" target="id-d518a3b59f9b46e780b643c0fc785006" archimateRelationship="r17_2"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v17_bp_han" archimateElement="bp_handle">
+        <bounds x="330" y="192" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn17_3" source="v17_bp_han" target="id-d518a3b59f9b46e780b643c0fc785006" archimateRelationship="r17_3">
+          <bendpoint startX="-11" startY="-99" endX="140" endY="-3"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-d518a3b59f9b46e780b643c0fc785006" targetConnections="conn17_2 conn17_3 conn17_1" archimateElement="id-632212f351ac4db681124a5a8773ebca">
+        <bounds x="237" y="116" width="15" height="15"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-c568a50a5ab244ecb352bfe96995bb73" source="id-d518a3b59f9b46e780b643c0fc785006" target="v17_vs_mng" archimateRelationship="id-7971fc5a2af740d69eceaa8c8410525b"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="10. Requirements Realization (Fig 18)" id="view_18">
+      <child xsi:type="archimate:DiagramObject" id="v18_r_sh" archimateElement="req_shared">
+        <bounds x="160" y="20" width="300" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_1" source="v18_r_sh" target="v18_r_pol" archimateRelationship="ag18_1"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_2" source="v18_r_sh" target="v18_r_fin" archimateRelationship="ag18_2"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v18_r_pol" targetConnections="conn18_1 conn18_6" archimateElement="req_supp_policy">
+        <bounds x="20" y="110" width="160" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v18_r_fin" targetConnections="conn18_2 conn18_7" archimateElement="req_supp_fin">
+        <bounds x="230" y="110" width="160" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v18_r_crm" targetConnections="conn18_8" archimateElement="req_crm_cent">
+        <bounds x="440" y="110" width="160" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v18_bp_han" targetConnections="conn18_s1 conn18_s2 conn18_s3" archimateElement="bp_handle">
+        <bounds x="324" y="204" width="136" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v18_bs_pol" targetConnections="conn18_9" archimateElement="bs_policy_admin">
+        <bounds x="20" y="290" width="160" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_6" source="v18_bs_pol" target="v18_r_pol" archimateRelationship="r18_1"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_s1" source="v18_bs_pol" target="v18_bp_han" archimateRelationship="s18_1"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v18_bs_fin" targetConnections="conn18_10" archimateElement="bs_financial">
+        <bounds x="230" y="290" width="160" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_7" source="v18_bs_fin" target="v18_r_fin" archimateRelationship="r18_2"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_s2" source="v18_bs_fin" target="v18_bp_han" archimateRelationship="s18_2"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v18_bs_crm" targetConnections="conn18_11" archimateElement="bs_crm_access">
+        <bounds x="440" y="290" width="160" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_8" source="v18_bs_crm" target="v18_r_crm" archimateRelationship="r18_4"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_s3" source="v18_bs_crm" target="v18_bp_han" archimateRelationship="s18_3"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v18_app_bo" targetConnections="conn18_12" archimateElement="app_bo_suite">
+        <bounds x="20" y="380" width="370" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_9" source="v18_app_bo" target="v18_bs_pol" archimateRelationship="r18_6"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_10" source="v18_app_bo" target="v18_bs_fin" archimateRelationship="r18_7"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v18_app_crm" targetConnections="conn18_13" archimateElement="app_crm">
+        <bounds x="440" y="380" width="160" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_11" source="v18_app_crm" target="v18_bs_crm" archimateRelationship="r18_8"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v18_node_backup" archimateElement="node_backup">
+        <bounds x="20" y="470" width="120" height="60"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_14" source="v18_node_backup" target="v18_art_bo" archimateRelationship="a18_1"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v18_art_bo" targetConnections="conn18_14 conn18_15" archimateElement="art_bo">
+        <bounds x="160" y="470" width="140" height="60"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_12" source="v18_art_bo" target="v18_app_bo" archimateRelationship="r18_9"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v18_node_gp" archimateElement="node_gp">
+        <bounds x="320" y="470" width="130" height="60"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_15" source="v18_node_gp" target="v18_art_bo" archimateRelationship="a18_2"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v18_art_crm" targetConnections="conn18_17" archimateElement="art_crm">
+        <bounds x="470" y="470" width="140" height="60"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_13" source="v18_art_crm" target="v18_app_crm" archimateRelationship="r18_10"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v18_node_fo" archimateElement="node_fo">
+        <bounds x="630" y="470" width="120" height="60"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn18_17" source="v18_node_fo" target="v18_art_crm" archimateRelationship="a18_4"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="11. Capabilities Gap Analysis (Fig 19)" id="view_19">
+      <child xsi:type="archimate:DiagramObject" id="v19_c_mgt" archimateElement="cap_cust_mgt">
+        <bounds x="20" y="20" width="689" height="236"/>
+        <child xsi:type="archimate:DiagramObject" id="v19_c_con" archimateElement="cap_cust_cont">
+          <bounds x="15" y="40" width="168" height="67"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v19_c_rel" archimateElement="cap_cust_rel">
+          <bounds x="216" y="40" width="168" height="67"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v19_c_ser" archimateElement="cap_serv_chan">
+          <bounds x="15" y="120" width="168" height="67"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v19_c_dat" archimateElement="cap_cust_data">
+          <bounds x="216" y="120" width="168" height="67"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v19_c_dig" archimateElement="cap_dig_cust">
+          <bounds x="432" y="40" width="193" height="117"/>
+          <child xsi:type="archimate:DiagramObject" id="v19_c_dch" archimateElement="cap_dig_chan">
+            <bounds x="12" y="60" width="173" height="40"/>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v19_p_mgt" archimateElement="cap_policy_mgt">
+        <bounds x="24" y="300" width="642" height="195"/>
+        <child xsi:type="archimate:DiagramObject" id="v19_p_lif" archimateElement="cap_cont_life">
+          <bounds x="15" y="40" width="142" height="51"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v19_p_set" archimateElement="cap_claim_settle">
+          <bounds x="180" y="40" width="169" height="51"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v19_p_adm" archimateElement="cap_cont_admin">
+          <bounds x="15" y="106" width="142" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v19_p_cad" archimateElement="cap_claim_admin">
+          <bounds x="180" y="108" width="169" height="51"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="v19_p_dat" archimateElement="cap_data_ins">
+          <bounds x="396" y="24" width="221" height="135"/>
+          <child xsi:type="archimate:DiagramObject" id="v19_p_acq" archimateElement="cap_data_acq">
+            <bounds x="10" y="36" width="201" height="25"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="v19_p_ana" archimateElement="cap_data_anal">
+            <bounds x="10" y="72" width="201" height="53"/>
+          </child>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="12. Resource Map (Fig 20)" id="view_20">
+      <child xsi:type="archimate:DiagramObject" id="v20_c1" targetConnections="conn20_1" archimateElement="cap_cust_mgt">
+        <bounds x="20" y="20" width="130" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v20_r1" archimateElement="res_crm">
+        <bounds x="20" y="100" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn20_1" source="v20_r1" target="v20_c1" archimateRelationship="id-ad4ac111eb154f5a93cd49b8768106b7"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v20_c2" targetConnections="conn20_2 conn20_3" archimateElement="cap_dig_chan">
+        <bounds x="240" y="20" width="280" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v20_r2" archimateElement="res_staff_sm">
+        <bounds x="240" y="100" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn20_2" source="v20_r2" target="v20_c2" archimateRelationship="id-077e8f9f68bf424595e3f80a020ff547"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v20_r3" archimateElement="res_sm_apps">
+        <bounds x="390" y="100" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn20_3" source="v20_r3" target="v20_c2" archimateRelationship="id-81288de44478425e99ce43357d1649ce"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v20_c3" targetConnections="conn20_4" archimateElement="cap_policy_mgt">
+        <bounds x="20" y="180" width="130" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v20_r4" archimateElement="res_bo_auto">
+        <bounds x="20" y="260" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn20_4" source="v20_r4" target="v20_c3" archimateRelationship="id-9f26e4d1126642a48e5dacfe7cccef1c"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v20_c4" targetConnections="conn20_5" archimateElement="cap_data_acq">
+        <bounds x="180" y="180" width="130" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v20_r5" archimateElement="res_data_src">
+        <bounds x="180" y="260" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn20_5" source="v20_r5" target="v20_c4" archimateRelationship="id-2dbb8e90919c4b5092f434540301fc8c"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v20_c5" targetConnections="conn20_7 conn20_6" archimateElement="cap_data_anal">
+        <bounds x="340" y="180" width="280" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v20_r6" archimateElement="res_data_auto">
+        <bounds x="340" y="260" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn20_6" source="v20_r6" target="v20_c5" archimateRelationship="id-e6bc9f227248408c9757e0a6c122e52d"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v20_r7" archimateElement="res_staff_data">
+        <bounds x="490" y="260" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn20_7" source="v20_r7" target="v20_c5" archimateRelationship="id-5272c4ff9aad47798666db9270b8d0da"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="13. Resource Realization (Fig 21)" id="view_21">
+      <child xsi:type="archimate:DiagramObject" id="v21_r1" targetConnections="conn21_1" archimateElement="res_crm">
+        <bounds x="20" y="20" width="130" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v21_a1" archimateElement="app_crm">
+        <bounds x="20" y="100" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn21_1" source="v21_a1" target="v21_r1" archimateRelationship="r21_1"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v21_r2" targetConnections="conn21_2" archimateElement="res_staff_data">
+        <bounds x="170" y="20" width="130" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v21_a2" archimateElement="id-3c7bd22541ab4dd197bc02d265cbd6d6">
+        <bounds x="170" y="100" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn21_2" source="v21_a2" target="v21_r2" archimateRelationship="r21_7"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v21_r3" targetConnections="conn21_3" archimateElement="res_sm_apps">
+        <bounds x="320" y="20" width="130" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v21_a3" archimateElement="app_mobile">
+        <bounds x="320" y="100" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn21_3" source="v21_a3" target="v21_r3" archimateRelationship="r21_4"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v21_r4" targetConnections="conn21_4" archimateElement="res_bo_auto">
+        <bounds x="20" y="180" width="130" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v21_a4" archimateElement="app_bo_suite">
+        <bounds x="20" y="260" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn21_4" source="v21_a4" target="v21_r4" archimateRelationship="r21_2"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v21_r5" targetConnections="conn21_5" archimateElement="res_data_src">
+        <bounds x="170" y="180" width="130" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v21_a5" archimateElement="id-fcddc488fdd14c1b94d27212cf9ab276">
+        <bounds x="170" y="260" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn21_5" source="v21_a5" target="v21_r5" archimateRelationship="r21_5"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v21_r6" targetConnections="conn21_6" archimateElement="res_data_auto">
+        <bounds x="320" y="180" width="130" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v21_a6" archimateElement="app_dwh">
+        <bounds x="320" y="260" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn21_6" source="v21_a6" target="v21_r6" archimateRelationship="r21_6"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v21_r7" targetConnections="conn21_7" archimateElement="res_staff_sm">
+        <bounds x="470" y="180" width="130" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="v21_a7" archimateElement="id-ee723651987946b1a98d0048886b3876">
+        <bounds x="470" y="260" width="130" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="conn21_7" source="v21_a7" target="v21_r7" archimateRelationship="r21_3"/>
+      </child>
+    </element>
+  </folder>
+</archimate:model>
